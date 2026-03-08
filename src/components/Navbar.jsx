@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
@@ -14,6 +14,7 @@ const routes = [
 
 export default function Navbar() {
   const { t } = useLang();
+  const location = useLocation();
   const navbarRef = useRef(null);
 
   useEffect(() => {
@@ -23,11 +24,40 @@ export default function Navbar() {
     let rafId = 0;
     let lastProgress = -1;
     let isFloating = false;
+    let isShortPage = false;
+    const animationScrollRange = 220;
+
+    const setShortPageMode = (enabled) => {
+      if (enabled !== isShortPage) {
+        navbarNode.classList.toggle('navbar--short-page', enabled);
+        isShortPage = enabled;
+      }
+    };
 
     const updateNavbarOnScroll = () => {
       rafId = 0;
       const scrollY = window.scrollY || window.pageYOffset || 0;
-      const progress = Math.min(scrollY / 220, 1);
+      const maxScrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 0);
+      const canAnimate = maxScrollable > animationScrollRange;
+
+      if (!canAnimate) {
+        setShortPageMode(true);
+        if (lastProgress !== 0) {
+          navbarNode.style.setProperty('--navbar-scroll-progress', '0');
+          lastProgress = 0;
+        }
+        if (isFloating) {
+          navbarNode.classList.remove('navbar--floating');
+          isFloating = false;
+        }
+        return;
+      }
+
+      if (isShortPage) {
+        setShortPageMode(false);
+      }
+
+      const progress = Math.min(Math.min(scrollY, maxScrollable) / animationScrollRange, 1);
 
       const shouldSyncEdgeProgress =
         (progress === 0 && lastProgress !== 0) || (progress === 1 && lastProgress !== 1);
@@ -59,8 +89,9 @@ export default function Navbar() {
       window.removeEventListener('resize', queueScrollUpdate);
       navbarNode.style.removeProperty('--navbar-scroll-progress');
       navbarNode.classList.remove('navbar--floating');
+      navbarNode.classList.remove('navbar--short-page');
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
     <header className="navbar" ref={navbarRef}>
