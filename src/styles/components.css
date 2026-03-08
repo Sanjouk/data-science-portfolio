@@ -32,8 +32,8 @@
   color: var(--bg);
   border: none;
   border-radius: 999px;
-  padding: 1rem 3rem;
-  font-size: 1.15rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   transition: opacity 0.2s;
 }
@@ -53,14 +53,15 @@
 /* --- Badges --- */
 .badge {
   display: inline-block;
-  padding: 0.45rem 1rem;
-  border-radius: 999px;
+  padding: 0.2rem 1rem;
+  border-radius: 48px;
   font-size: 0.85rem;
   font-weight: 600;
-  background: var(--accent-glow);
-  color: var(--accent);
+  background: #C4BBF0;
+  color: #6254A5;
   border: none;
   letter-spacing: 0.01em;
+  outline: 1px solid #6254A5;
 }
 
 /* --- Section Title --- */
@@ -70,11 +71,12 @@
 }
 
 .section-title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 64px);
+  font-weight: 600;
   color: var(--text-heading);
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
 }
 
 .section-subtitle {
@@ -84,12 +86,24 @@
 }
 
 .section-divider {
-  width: 120px;
-  height: 2px;
-  background: var(--accent);
-  margin: 0.75rem auto 2.5rem;
-  border-radius: 999px;
-  opacity: 0.6;
+  display: none;
+}
+
+.section-line {
+  height: 1px;
+  background-color: var(--accent);
+  width: var(--title-line-width, 100px);
+  margin: 0.05rem auto 0;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.has-line {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.has-line .section-title {
+  margin-bottom: 0.2rem;
 }
 
 .section-cta {
@@ -105,13 +119,11 @@
 .interest-card,
 .contact-card,
 .language-card {
-  border-radius: 31px;
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 5px 5px 10.4px 0 rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  background: var(--bg-card);
   border: 1px solid var(--border-card);
-  padding: var(--card-padding);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;

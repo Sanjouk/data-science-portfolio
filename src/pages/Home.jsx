@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import { useLang } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
 import { setSEO } from '../utils/seo';
+
 const dayImg = '/images/main_photo_day.png';
 const nightImg = '/images/main_photo_night.png';
 

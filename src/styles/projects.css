@@ -15,7 +15,7 @@
 }
 
 .project-card {
-  border-radius: 31px;
+  border-radius: var(--radius);
   background: var(--bg-card);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
@@ -108,7 +108,7 @@
    ========================================= */
 .search-bar {
   position: relative;
-  max-width: 400px;
+  width: 100%;
 }
 
 .search-icon {

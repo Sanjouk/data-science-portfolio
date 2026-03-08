@@ -6,9 +6,11 @@ import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
 import { useLang } from '../context/LanguageContext';
 import { setSEO } from '../utils/seo';
+import { useMeasuredLines } from '../hooks/useMeasuredLines';
 
 export default function Projects() {
   const { t } = useLang();
+  useMeasuredLines();
   const [search, setSearch] = useState('');
   const [techFilter, setTechFilter] = useState('');
   const [selected, setSelected] = useState(null);
@@ -45,7 +47,7 @@ export default function Projects() {
   return (
     <div className="page">
       <section className="section">
-        <SectionTitle>{t.sections.projects}</SectionTitle>
+        <SectionTitle withLine>{t.sections.projects}</SectionTitle>
 
         <div className="projects-controls">
           <SearchBar value={search} onChange={setSearch} />

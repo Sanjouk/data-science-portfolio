@@ -1,17 +1,21 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Eye, Database, Cloud, Award, Users, Zap } from 'lucide-react';
+import { Brain, Eye, Database, Cloud, Award, Users, Zap, Waves, Gamepad2, Trophy } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import Timeline from '../components/Timeline';
 import Badge from '../components/Badge';
 import { useLang } from '../context/LanguageContext';
 import { setSEO } from '../utils/seo';
+import { useMeasuredLines } from '../hooks/useMeasuredLines';
 
 const iconComponents = {
   Brain: Brain,
   Eye: Eye,
   Database: Database,
   Cloud: Cloud,
+  Waves: Waves,
+  Gamepad2: Gamepad2,
+  Trophy: Trophy,
 };
 
 const strengthIcons = [Zap, Award, Users];
@@ -27,6 +31,7 @@ const cardVariants = {
 
 export default function About() {
   const { t } = useLang();
+  useMeasuredLines();
 
   useEffect(() => {
     setSEO(t.nav.about, t.sections.aboutMeText);
@@ -36,7 +41,7 @@ export default function About() {
     <div className="page">
       {/* About Me */}
       <section className="section">
-        <SectionTitle>{t.sections.aboutMe}</SectionTitle>
+        <SectionTitle withLine>{t.sections.aboutMe}</SectionTitle>
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -50,7 +55,7 @@ export default function About() {
 
       {/* What I Do */}
       <section className="section">
-        <SectionTitle>{t.sections.whatIDo}</SectionTitle>
+        <SectionTitle withLine>{t.sections.whatIDo}</SectionTitle>
         <div className="what-grid">
           {t.whatIDo.map((item, i) => {
             const Icon = iconComponents[item.icon] || Brain;
@@ -75,19 +80,19 @@ export default function About() {
 
       {/* Education */}
       <section className="section">
-        <SectionTitle>{t.sections.education}</SectionTitle>
+        <SectionTitle withLine>{t.sections.education}</SectionTitle>
         <Timeline items={t.education} />
       </section>
 
       {/* Experience */}
       <section className="section">
-        <SectionTitle>{t.sections.experience}</SectionTitle>
+        <SectionTitle withLine>{t.sections.experience}</SectionTitle>
         <Timeline items={t.experience} />
       </section>
 
       {/* Skills */}
       <section className="section">
-        <SectionTitle>{t.sections.skills}</SectionTitle>
+        <SectionTitle withLine>{t.sections.skills}</SectionTitle>
         <div className="skills-groups">
           {t.skills.map((group, i) => (
             <motion.div
@@ -111,7 +116,7 @@ export default function About() {
 
       {/* Languages */}
       <section className="section">
-        <SectionTitle>{t.sections.languages}</SectionTitle>
+        <SectionTitle withLine>{t.sections.languages}</SectionTitle>
         <div className="languages-grid">
           {t.languages.map((lang, i) => (
             <motion.div
@@ -142,7 +147,7 @@ export default function About() {
 
       {/* Strengths */}
       <section className="section">
-        <SectionTitle>{t.sections.strengths}</SectionTitle>
+        <SectionTitle withLine>{t.sections.strengths}</SectionTitle>
         <div className="strengths-grid">
           {t.strengths.map((s, i) => {
             const SIcon = strengthIcons[i] || Award;
@@ -158,6 +163,29 @@ export default function About() {
                 <SIcon size={24} className="strength-icon" />
                 <h3 className="strength-title">{s.title}</h3>
                 <p className="strength-desc">{s.description}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Interests */}
+      <section className="section">
+        <SectionTitle withLine>{t.sections.interests}</SectionTitle>
+        <div className="interests-grid">
+          {t.interests.map((item, i) => {
+            const Icon = iconComponents[item.icon] || Brain;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="interest-card"
+              >
+                <Icon size={24} className="interest-icon" />
+                <h3 className="interest-title">{item.title}</h3>
+                <p className="interest-desc">{item.description}</p>
               </motion.div>
             );
           })}

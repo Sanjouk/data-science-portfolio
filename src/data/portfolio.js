@@ -222,9 +222,9 @@ export const portfolio = {
             },
         ],
         interests: [
-            { title: 'Natation', description: '17 ans de pratique' },
-            { title: 'E-sport', description: 'CS2 — compétition et stratégie' },
-            { title: 'Formule 1', description: 'Passion pour la F1 et l\'ingénierie automobile' },
+            { title: 'Natation', description: '17 ans de pratique', icon: 'Waves' },
+            { title: 'E-sport', description: 'CS2 — compétition et stratégie', icon: 'Gamepad2' },
+            { title: 'Formule 1', description: 'Passion pour la F1 et l\'ingénierie automobile', icon: 'Trophy' },
         ],
         contactForm: {
             name: 'Nom',
@@ -468,9 +468,9 @@ export const portfolio = {
             },
         ],
         interests: [
-            { title: 'Swimming', description: '17 years of practice' },
-            { title: 'E-sport', description: 'CS2 — competition and strategy' },
-            { title: 'Formula 1', description: 'Passion for F1 and automotive engineering' },
+            { title: 'Swimming', description: '17 years of practice', icon: 'Waves' },
+            { title: 'E-sport', description: 'CS2 — competition and strategy', icon: 'Gamepad2' },
+            { title: 'Formula 1', description: 'Passion for F1 and automotive engineering', icon: 'Trophy' },
         ],
         contactForm: {
             name: 'Name',
@@ -689,9 +689,9 @@ export const portfolio = {
             },
         ],
         interests: [
-            { title: 'Плавание', description: '17 лет занятий' },
-            { title: 'Киберспорт', description: 'CS2' },
-            { title: 'Формула 1', description: 'Ф1 и автомобилестроение' },
+            { title: 'Плавание', description: '17 лет занятий', icon: 'Waves' },
+            { title: 'Киберспорт', description: 'CS2 — соревнования и стратегия', icon: 'Gamepad2' },
+            { title: 'Формула 1', description: 'Ф1 и автомобилестроение', icon: 'Trophy' },
         ],
         contactForm: {
             name: 'Имя',
@@ -910,9 +910,9 @@ export const portfolio = {
             },
         ],
         interests: [
-            { title: 'Плавання', description: '17 років занять' },
-            { title: 'Кіберспорт', description: 'CS2' },
-            { title: 'Формула 1', description: 'Захоплення Ф1' },
+            { title: 'Плавання', description: '17 років занять', icon: 'Waves' },
+            { title: 'Кіберспорт', description: 'CS2 — змагання та стратегія', icon: 'Gamepad2' },
+            { title: 'Формула 1', description: 'Захоплення Ф1 та автомобільна інженерія', icon: 'Trophy' },
         ],
         contactForm: {
             name: 'Ім\'я',
