@@ -1,0 +1,63 @@
+/* =========================================
+   CUSTOM PROPERTIES / DESIGN TOKENS
+   ========================================= */
+:root {
+  /* Colors — Night theme */
+  --bg: #121216;
+  --bg-card: #121216;
+  --bg-card-hover: #1a1a20;
+  --bg-nav: rgba(0, 0, 0, 0.85);
+  --text: #e4e4e7;
+  --text-muted: #9ca3af;
+  --text-heading: #ffffff;
+  --accent: #C4BBF0;
+  --accent-hover: #d5ccff;
+  --accent-glow: rgba(196, 187, 240, 0.15);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(196, 187, 240, 0.3);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.7);
+  --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.28) 0%, rgba(196, 187, 240, 0.1) 100%);
+  --radius: 20px;
+  --radius-sm: 999px;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --success: #34d399;
+  --error: #f87171;
+  --toast-bg: #1e1e2e;
+  --year-opacity: 1.0;
+  --hero-blur-bg: #6254A5; /* Specified for dark mode */
+  --skills-blur-color: rgba(98, 84, 165, 0.95);
+  --skills-blur-color-mid: rgba(98, 84, 165, 0.5);
+
+  /* Dynamic Card Tokens */
+  --card-header-min-height: clamp(70px, 10vw, 114px);
+  --card-spacer: clamp(1rem, 3vw, 1.5rem);
+  --card-title-size: clamp(1.2rem, 2.5vw, 1.75rem);
+  --card-padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.light {
+  /* Colors — Day theme */
+  --bg: #FFFFFF;
+  --bg-card: #f9f9fb;
+  --bg-card-hover: #f0f1f5;
+  --bg-nav: rgba(255, 255, 255, 0.9);
+  --text: #000000;
+  --text-muted: #4b5563;
+  --text-heading: #000000;
+  --accent: #6254A5;
+  --accent-hover: #50448a;
+  --accent-glow: rgba(98, 84, 165, 0.1);
+  --border: rgba(0, 0, 0, 0.06);
+  --border-card: rgba(0, 0, 0, 0.04);
+  --border-accent: rgba(98, 84, 165, 0.25);
+  --shadow: 0 16px 40px rgba(98, 84, 165, 0.12);
+  --shadow-hover: 0 20px 50px rgba(98, 84, 165, 0.18);
+  --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.1) 0%, rgba(196, 187, 240, 0.2) 100%);
+  --toast-bg: #fff;
+  --year-opacity: 1.0;
+  --hero-blur-bg: #C4BBF0; /* Specified for light mode */
+  --skills-blur-color: rgba(196, 187, 240, 0.95);
+  --skills-blur-color-mid: rgba(196, 187, 240, 0.55);
+}

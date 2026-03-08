@@ -1,0 +1,302 @@
+/* =========================================
+   HERO BLOCK
+   ========================================= */
+.hero {
+  padding: 2rem 0 0 0;
+  text-align: left;
+  border-radius: 0;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: visible;
+  min-height: calc(100vh - 105px);
+  display: flex;
+  align-items: center;
+}
+
+/* Background blob (Figma-style blur) - Fully Adaptive */
+.hero-blur {
+  position: absolute;
+  left: 10vw; /* Shifted to the right */
+  top: -5vh; /* Moved vertically higher */
+  width: clamp(350px, 45vw, 650px); /* Increased size slightly */
+  height: clamp(650px, 85vh, 1200px); /* Increased size slightly */
+  transform: rotate(38.8deg);
+  pointer-events: none;
+  z-index: 4; /* Layered above the image and its mask */
+  opacity: 1;
+  transition: background-color 0.3s ease; /* Sync with theme switch */
+}
+
+.hero-blur::before,
+.hero-blur::after {
+  content: "";
+  position: absolute;
+  background: var(--hero-blur-bg);
+  filter: blur(clamp(50px, 6vw, 120px)); /* Reduced blur for more intensity/saturation */
+  transition: background-color 0.3s ease; /* Ensure sync across all parts */
+}
+
+.hero-blur::before {
+  width: 72%;
+  height: 85%;
+  left: 10%;
+  top: 11%;
+  border-radius: 46% 54% 60% 40% / 24% 36% 64% 76%;
+}
+
+.hero-blur::after {
+  width: 80%;
+  height: 31%;
+  left: 12%;
+  top: 1%;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .hero-blur {
+    left: -20vw;
+    top: -20vh;
+    transform: rotate(30deg) scale(0.8);
+    opacity: 0.7;
+  }
+}
+
+/* Текст SCROLL */
+.hero::after {
+  content: 'SCROLL';
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--text-heading);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  z-index: 3;
+}
+
+/* Линия SCROLL */
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 70px;
+  background: var(--text-heading);
+  opacity: 0.3;
+  z-index: 3;
+}
+
+/* Левая часть с текстом */
+.hero-content {
+  position: relative;
+  z-index: 5; /* Above the blur and image layers */
+  max-width: 760px;
+  padding: 0 0 6rem 2rem;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  right: -3rem; /* Move right */
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+/* Left edge mask - Refactored for smooth theme transition */
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -5%;
+  bottom: -5%;
+  left: -20%; /* Large overlap to ensure no seams */
+  width: 60%;
+  background-color: var(--bg);
+  /* The professional way: Transition the solid color, mask the transparency */
+  -webkit-mask-image: linear-gradient(to right, black 40%, transparent 100%);
+  mask-image: linear-gradient(to right, black 40%, transparent 100%);
+  z-index: 3;
+  transition: background-color 0.3s ease; /* Sync with body transition */
+  pointer-events: none;
+}
+
+/* Bottom fade - Refactored for smooth theme transition */
+.hero-image-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: -2rem;
+  left: -2rem; /* Wide enough to cover any wrapper edge */
+  height: 40%;
+  background-color: var(--bg);
+  -webkit-mask-image: linear-gradient(to top, black 25%, transparent 100%);
+  mask-image: linear-gradient(to top, black 25%, transparent 100%);
+  z-index: 2;
+  transition: background-color 0.3s ease; /* Sync with body transition */
+  pointer-events: none;
+}
+
+.hero-image-wrapper img,
+.hero-image {
+  display: block;
+  width: clamp(620px, 52vw, 900px); /* Increase size */
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom right;
+  border-radius: var(--radius);
+}
+
+/* Тексты */
+.hero-greeting {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.hero-name {
+  font-size: clamp(3.5rem, 7vw, 7.5rem);
+  font-weight: 900;
+  color: var(--text-heading);
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-heading);
+  max-width: 520px;
+  margin: 0;
+  line-height: 1.5;
+  border: 1px solid var(--text-heading);
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+}
+
+.hero-actions {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .hero-image-wrapper img,
+  .hero-image {
+    width: clamp(580px, 48vw, 920px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-content {
+    max-width: 640px;
+  }
+
+  .hero-image-wrapper img,
+  .hero-image {
+    width: clamp(520px, 45vw, 840px);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: visible;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-image-wrapper {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    justify-content: flex-end;
+    pointer-events: auto;
+  }
+
+  .hero-image-wrapper img,
+  .hero-image {
+    width: clamp(280px, 70vw, 520px);
+    max-width: 100%;
+  }
+
+  .hero::after,
+  .hero::before {
+    display: none;
+  }
+}
+
+/* Decoration Section Blur Shape */
+.section--decorated {
+  position: relative;
+  overflow: visible; /* Allow the large decoration to spill out */
+}
+
+.right-blur {
+  position: absolute;
+  right: -150px;
+  top: 0;
+  /* Adaptive large shape - increased size as requested */
+  width: clamp(500px, 55vw, 750px);
+  height: clamp(900px, 95vh, 1400px);
+  transform: rotate(91deg);
+  z-index: 1;
+
+  border-radius: 48% 52% 58% 42% / 38% 61% 39% 62%;
+  
+  /* Use new theme-aware colors: #6254A5 (Night) and #C4BBF0 (Day) */
+  background: radial-gradient(
+    ellipse at 45% 55%,
+    var(--skills-blur-color) 0%,
+    var(--skills-blur-color-mid) 50%,
+    transparent 100%
+  );
+
+  filter: blur(clamp(50px, 5vw, 85px)); /* Tighter blur makes it look more saturated */
+  opacity: 1; /* Increased to full opacity */
+  pointer-events: none;
+  transition: background 0.3s ease; /* Sync with theme switch */
+}
+
+.highlights-grid {
+  position: relative;
+  z-index: 2; /* Stay above the decoration blur */
+}
+
+@media (max-width: 900px) {
+  .right-blur {
+    right: -100px;
+    top: 100px;
+    width: clamp(250px, 60vw, 400px);
+    height: clamp(500px, 100vh, 800px);
+    transform: rotate(90deg) scale(0.6);
+    opacity: 0.5;
+  }
+}

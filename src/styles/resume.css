@@ -1,0 +1,61 @@
+/* =========================================
+   RESUME PDF VIEWER
+   ========================================= */
+.resume-view-section {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.resume-viewer-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 31px;
+  border: 1px solid var(--border-card);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.resume-viewer-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.resume-viewer-container::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.pdf-document {
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-page {
+  max-width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.download-icon {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .resume-viewer-container {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+}

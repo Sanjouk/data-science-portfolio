@@ -1,0 +1,936 @@
+export const portfolio = {
+    fr: {
+        profile: {
+            name: 'VLASOV Oleksandr',
+            title: 'Étudiant ingénieur IA & Data Science',
+            summary:
+                "Étudiant ingénieur passionné par l'IA et la Data Science, je recherche une alternance de 2 ans dès septembre 2026 dans les domaines : Data Science, Data Analysis, Big Data, IA & ML, Data Engineering, IoT dev.",
+            location: 'Troyes, France',
+            availability: 'Alternance 2 ans dès septembre 2026',
+        },
+        contacts: {
+            phone: '+33 7 XX XX XX XX',
+            email: 'vlasov.oleksandr@example.com',
+            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
+            github: 'https://github.com/oleksandr-vlasov',
+        },
+        nav: {
+            home: 'Accueil',
+            about: 'À propos',
+            projects: 'Projets',
+            resume: 'CV',
+            contact: 'Contact',
+        },
+        hero: {
+            greeting: 'Bonjour, je suis',
+            subtitle: 'Étudiant ingénieur IA & Data Science',
+            description:
+                "À la recherche d'une alternance de 2 ans dès septembre 2026 en Data Science, IA & ML, Data Engineering.",
+            cta1: 'Voir les projets',
+            cta2: 'Télécharger CV',
+        },
+        highlights: [
+            {
+                title: 'RAG & LLM',
+                description: 'Agents conversationnels, retrieval-augmented generation, intégration Ollama.',
+            },
+            {
+                title: 'ML Pipelines',
+                description: 'Modèles de machine learning, scikit-learn, TensorFlow, prédiction.',
+            },
+            {
+                title: 'REST & Docker',
+                description: 'APIs FastAPI, conteneurisation Docker, déploiement automatisé.',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'Pipelines de données, ETL, bases de données, automatisation.',
+            },
+        ],
+        featuredTitle: 'Projets mis en avant',
+        sections: {
+            aboutMe: 'À propos de moi',
+            aboutMeText:
+                "Étudiant ingénieur à l'UTT (Université de Technologie de Troyes) en Systèmes Numériques, spécialisé en IA et Data Science. Passionné par le machine learning, le deep learning et l'ingénierie des données, je construis des projets concrets alliant recherche et déploiement. Je suis actuellement en quête d'une alternance de 2 ans pour approfondir mes compétences en entreprise.",
+            whatIDo: 'Ce que je fais',
+            skills: 'Compétences',
+            languages: 'Langues',
+            strengths: 'Atouts',
+            projects: 'Projets',
+            education: 'Formation',
+            experience: 'Expérience',
+            interests: "Centres d'intérêt",
+            contact: 'Contact',
+            openTo: 'Ouvert aux opportunités',
+            openToText:
+                "Je recherche une alternance de 2 ans dès septembre 2026 dans les domaines Data Science / IA & ML / Data Engineering. N'hésitez pas à me contacter !",
+        },
+        whatIDo: [
+            {
+                title: 'Machine Learning',
+                description: 'Classification, régression, clustering, feature engineering, évaluation de modèles.',
+                icon: 'Brain',
+            },
+            {
+                title: 'Deep Learning & CV',
+                description: 'Réseaux de neurones, TensorFlow, PyTorch, vision par ordinateur.',
+                icon: 'Eye',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'Pipelines ETL, bases de données SQL/NoSQL, automatisation, orchestration.',
+                icon: 'Database',
+            },
+            {
+                title: 'Déploiement',
+                description: 'APIs REST (FastAPI), Docker, notions AWS/Azure, CI/CD.',
+                icon: 'Cloud',
+            },
+        ],
+        skills: [
+            {
+                category: 'ML / DL',
+                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+            },
+            {
+                category: 'Python & Data',
+                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+            },
+            {
+                category: 'Data Engineering',
+                items: ['ETL', 'SQL', 'Airflow (notions)', 'Spark (notions)', 'Data pipelines'],
+            },
+            {
+                category: 'Déploiement',
+                items: ['Docker', 'Git', 'GitHub Actions', 'API REST', 'AWS (notions)', 'Azure (notions)'],
+            },
+            {
+                category: 'Outils',
+                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+            },
+        ],
+        languages: [
+            { name: 'Ukrainien', level: 'Natif', percent: 100 },
+            { name: 'Russe', level: 'Natif', percent: 100 },
+            { name: 'Français', level: 'C1', percent: 85 },
+            { name: 'Anglais', level: 'B2', percent: 70 },
+        ],
+        strengths: [
+            {
+                title: 'Challenger',
+                description: "J'aime me dépasser et relever des défis techniques complexes.",
+            },
+            {
+                title: 'Curieux',
+                description: 'Toujours en veille technologique, j\'explore de nouvelles technologies.',
+            },
+            {
+                title: 'Bon relationnel',
+                description: 'Communicatif et à l\'écoute, je travaille efficacement en équipe.',
+            },
+        ],
+        projects: [
+            {
+                slug: 'agent-conversationnel-rag',
+                title: 'Agent conversationnel imitant un utilisateur (RAG)',
+                description:
+                    "Système RAG complet permettant de simuler un utilisateur via un agent conversationnel. Utilise l'ingestion de documents, l'indexation vectorielle et la génération augmentée par récupération.",
+                tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
+                features: [
+                    'Ingestion et chunking automatique de documents',
+                    'Indexation vectorielle avec ChromaDB',
+                    'Génération de réponses via Ollama (LLM local)',
+                    'API REST avec FastAPI',
+                    'Conteneurisation Docker complète',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'tracker-candidatures',
+                title: 'Tracker de candidatures',
+                description:
+                    "Application de suivi automatisé des candidatures d'emploi. Récupère les emails, extrait les informations clés et les organise dans un tableau de bord.",
+                tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
+                features: [
+                    'Récupération automatique des emails via Gmail API',
+                    'Extraction d\'informations par LLM (Ollama)',
+                    'Synchronisation avec Google Sheets',
+                    'Stockage local SQLite',
+                    'Pipeline Docker automatisé',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'prediction-insuffisance-cardiaque',
+                title: "Prédiction d'insuffisance cardiaque",
+                description:
+                    "Projet de machine learning pour la prédiction de l'insuffisance cardiaque à partir de données médicales. Comparaison de plusieurs modèles et analyse des features.",
+                tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
+                features: [
+                    'Analyse exploratoire des données médicales',
+                    'Prétraitement et feature engineering',
+                    'Comparaison de modèles (Random Forest, XGBoost, NN)',
+                    'Évaluation avec métriques cliniques',
+                    'Visualisations interprétables (SHAP)',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+        ],
+        education: [
+            {
+                title: 'Ingénieur Système Numérique',
+                institution: 'UTT — Université de Technologie de Troyes',
+                period: '2022 – 2028',
+                location: 'Troyes, France',
+                description: "Formation d'ingénieur avec spécialisation en IA et Data Science. Projets pratiques, stages et alternance.",
+            },
+            {
+                title: 'Ingénieur en Cybersécurité',
+                institution: 'NTU "KhPI" — National Technical University',
+                period: '2021 – 2025',
+                location: 'En ligne',
+                description: "Formation en ingénierie informatique avec spécialisation en cybersécurité. Cours suivis en parallèle.",
+            },
+        ],
+        experience: [
+            {
+                title: 'Stagiaire',
+                company: 'Chronodrive',
+                period: 'Stage',
+                location: 'France',
+                description: "Stage en entreprise dans le domaine de la distribution. Découverte de l'environnement professionnel et des processus logistiques.",
+            },
+            {
+                title: 'Agent immobilier',
+                company: 'Indépendant',
+                period: 'Expérience professionnelle',
+                location: 'France',
+                description: "Gestion de la relation client, négociation, et accompagnement dans les transactions immobilières.",
+            },
+            {
+                title: 'Volontaire — Compétitions de natation',
+                company: 'Bénévolat',
+                period: 'Volontariat',
+                location: 'France',
+                description: "Organisation et assistance lors de compétitions de natation. Coordination d'équipe et gestion d'événements.",
+            },
+        ],
+        interests: [
+            { title: 'Natation', description: '17 ans de pratique' },
+            { title: 'E-sport', description: 'CS2 — compétition et stratégie' },
+            { title: 'Formule 1', description: 'Passion pour la F1 et l\'ingénierie automobile' },
+        ],
+        contactForm: {
+            name: 'Nom',
+            email: 'Email',
+            message: 'Message',
+            send: 'Envoyer',
+            success: 'Message envoyé avec succès ! (simulation)',
+            error: 'Veuillez remplir tous les champs.',
+        },
+        footer: {
+            rights: '© 2026 Vlasov Oleksandr. Tous droits réservés.',
+        },
+        search: 'Rechercher un projet...',
+        filterAll: 'Tous',
+        viewProject: 'Voir le projet',
+        keyFeatures: 'Fonctionnalités clés',
+        techStack: 'Stack technique',
+        close: 'Fermer',
+        noResults: 'Aucun projet trouvé.',
+    },
+    en: {
+        profile: {
+            name: 'VLASOV Oleksandr',
+            title: 'AI & Data Science Engineering Student',
+            summary:
+                'Engineering student passionate about AI and Data Science, seeking a 2-year apprenticeship starting September 2026 in: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
+            location: 'Troyes, France',
+            availability: '2-year apprenticeship from September 2026',
+        },
+        contacts: {
+            phone: '+33 7 XX XX XX XX',
+            email: 'vlasov.oleksandr@example.com',
+            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
+            github: 'https://github.com/oleksandr-vlasov',
+        },
+        nav: {
+            home: 'Home',
+            about: 'About',
+            projects: 'Projects',
+            resume: 'Resume',
+            contact: 'Contact',
+        },
+        hero: {
+            greeting: "Hi, I'm",
+            subtitle: 'AI & Data Science Engineering Student',
+            description:
+                'Looking for a 2-year apprenticeship starting September 2026 in Data Science, AI & ML, Data Engineering.',
+            cta1: 'View Projects',
+            cta2: 'Download CV',
+        },
+        highlights: [
+            {
+                title: 'RAG & LLM',
+                description: 'Conversational agents, retrieval-augmented generation, Ollama integration.',
+            },
+            {
+                title: 'ML Pipelines',
+                description: 'Machine learning models, scikit-learn, TensorFlow, prediction.',
+            },
+            {
+                title: 'REST & Docker',
+                description: 'FastAPI APIs, Docker containerization, automated deployment.',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'Data pipelines, ETL, databases, automation.',
+            },
+        ],
+        featuredTitle: 'Featured Projects',
+        sections: {
+            aboutMe: 'About Me',
+            aboutMeText:
+                'Engineering student at UTT (University of Technology of Troyes) in Digital Systems, specializing in AI and Data Science. Passionate about machine learning, deep learning and data engineering, I build practical projects combining research and deployment. Currently looking for a 2-year apprenticeship to deepen my skills in industry.',
+            whatIDo: 'What I Do',
+            skills: 'Skills',
+            languages: 'Languages',
+            strengths: 'Strengths',
+            projects: 'Projects',
+            education: 'Education',
+            experience: 'Experience',
+            interests: 'Interests',
+            contact: 'Contact',
+            openTo: 'Open to Opportunities',
+            openToText:
+                "I'm looking for a 2-year apprenticeship starting September 2026 in Data Science / AI & ML / Data Engineering. Feel free to reach out!",
+        },
+        whatIDo: [
+            {
+                title: 'Machine Learning',
+                description: 'Classification, regression, clustering, feature engineering, model evaluation.',
+                icon: 'Brain',
+            },
+            {
+                title: 'Deep Learning & CV',
+                description: 'Neural networks, TensorFlow, PyTorch, computer vision.',
+                icon: 'Eye',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'ETL pipelines, SQL/NoSQL databases, automation, orchestration.',
+                icon: 'Database',
+            },
+            {
+                title: 'Deployment',
+                description: 'REST APIs (FastAPI), Docker, AWS/Azure basics, CI/CD.',
+                icon: 'Cloud',
+            },
+        ],
+        skills: [
+            {
+                category: 'ML / DL',
+                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+            },
+            {
+                category: 'Python & Data',
+                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+            },
+            {
+                category: 'Data Engineering',
+                items: ['ETL', 'SQL', 'Airflow (basics)', 'Spark (basics)', 'Data pipelines'],
+            },
+            {
+                category: 'Deployment',
+                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (basics)', 'Azure (basics)'],
+            },
+            {
+                category: 'Tools',
+                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+            },
+        ],
+        languages: [
+            { name: 'Ukrainian', level: 'Native', percent: 100 },
+            { name: 'Russian', level: 'Native', percent: 100 },
+            { name: 'French', level: 'C1', percent: 85 },
+            { name: 'English', level: 'B2', percent: 70 },
+        ],
+        strengths: [
+            {
+                title: 'Challenger',
+                description: 'I love pushing boundaries and tackling complex technical challenges.',
+            },
+            {
+                title: 'Curious',
+                description: 'Always on the lookout for new technologies and best practices.',
+            },
+            {
+                title: 'Team Player',
+                description: 'Communicative and attentive, I work effectively in teams.',
+            },
+        ],
+        projects: [
+            {
+                slug: 'agent-conversationnel-rag',
+                title: 'Conversational Agent Simulating a User (RAG)',
+                description:
+                    'Complete RAG system to simulate a user via a conversational agent. Uses document ingestion, vector indexing and retrieval-augmented generation.',
+                tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
+                features: [
+                    'Automatic document ingestion and chunking',
+                    'Vector indexing with ChromaDB',
+                    'Response generation via Ollama (local LLM)',
+                    'REST API with FastAPI',
+                    'Full Docker containerization',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'tracker-candidatures',
+                title: 'Job Application Tracker',
+                description:
+                    'Automated job application tracking app. Fetches emails, extracts key information and organizes them in a dashboard.',
+                tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
+                features: [
+                    'Automatic email retrieval via Gmail API',
+                    'Information extraction via LLM (Ollama)',
+                    'Google Sheets synchronization',
+                    'Local SQLite storage',
+                    'Automated Docker pipeline',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'prediction-insuffisance-cardiaque',
+                title: 'Heart Failure Prediction',
+                description:
+                    'Machine learning project to predict heart failure from medical data. Comparison of multiple models and feature analysis.',
+                tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
+                features: [
+                    'Exploratory analysis of medical data',
+                    'Preprocessing and feature engineering',
+                    'Model comparison (Random Forest, XGBoost, NN)',
+                    'Evaluation with clinical metrics',
+                    'Interpretable visualizations (SHAP)',
+                ],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+        ],
+        education: [
+            {
+                title: 'Digital Systems Engineer',
+                institution: 'UTT — University of Technology of Troyes',
+                period: '2022 – 2028',
+                location: 'Troyes, France',
+                description: 'Engineering degree with specialization in AI and Data Science. Practical projects, internships and apprenticeships.',
+            },
+            {
+                title: 'Cybersecurity Engineer',
+                institution: 'NTU "KhPI" — National Technical University',
+                period: '2021 – 2025',
+                location: 'Online',
+                description: 'Computer engineering degree with cybersecurity specialization. Courses taken in parallel.',
+            },
+        ],
+        experience: [
+            {
+                title: 'Intern',
+                company: 'Chronodrive',
+                period: 'Internship',
+                location: 'France',
+                description: 'Internship in the distribution sector. Discovery of the professional environment and logistics processes.',
+            },
+            {
+                title: 'Real Estate Agent',
+                company: 'Independent',
+                period: 'Work Experience',
+                location: 'France',
+                description: 'Client relationship management, negotiation, and support in real estate transactions.',
+            },
+            {
+                title: 'Volunteer — Swimming Competitions',
+                company: 'Volunteering',
+                period: 'Volunteer Work',
+                location: 'France',
+                description: 'Organization and assistance at swimming competitions. Team coordination and event management.',
+            },
+        ],
+        interests: [
+            { title: 'Swimming', description: '17 years of practice' },
+            { title: 'E-sport', description: 'CS2 — competition and strategy' },
+            { title: 'Formula 1', description: 'Passion for F1 and automotive engineering' },
+        ],
+        contactForm: {
+            name: 'Name',
+            email: 'Email',
+            message: 'Message',
+            send: 'Send',
+            success: 'Message sent successfully! (simulation)',
+            error: 'Please fill in all fields.',
+        },
+        footer: {
+            rights: '© 2026 Vlasov Oleksandr. All rights reserved.',
+        },
+        search: 'Search projects...',
+        filterAll: 'All',
+        viewProject: 'View project',
+        keyFeatures: 'Key Features',
+        techStack: 'Tech Stack',
+        close: 'Close',
+        noResults: 'No projects found.',
+    },
+    ru: {
+        profile: {
+            name: 'ВЛАСОВ Александр',
+            title: 'Студент-инженер ИИ & Data Science',
+            summary: 'Студент-инженер, увлеченный ИИ и Data Science, ищу 2-летнюю стажировку с сентября 2026 года в направлениях: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
+            location: 'Труа, Франция',
+            availability: 'Стажировка на 2 года с сентября 2026',
+        },
+        contacts: {
+            phone: '+33 7 XX XX XX XX',
+            email: 'vlasov.oleksandr@example.com',
+            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
+            github: 'https://github.com/oleksandr-vlasov',
+        },
+        nav: {
+            home: 'Главная',
+            about: 'Обо мне',
+            projects: 'Проекты',
+            resume: 'Резюме',
+            contact: 'Контакты',
+        },
+        hero: {
+            greeting: 'Привет, я',
+            subtitle: 'Студент-инженер ИИ & Data Science',
+            description: 'Ищу 2-летнюю стажировку с сентября 2026 года в Data Science, AI & ML, Data Engineering.',
+            cta1: 'Смотреть проекты',
+            cta2: 'Скачать CV',
+        },
+        highlights: [
+            {
+                title: 'RAG & LLM',
+                description: 'Диалоговые агенты, генерация с дополненной выборкой (RAG), интеграция Ollama.',
+            },
+            {
+                title: 'ML Pipelines',
+                description: 'Модели машинного обучения, scikit-learn, TensorFlow, прогнозирование.',
+            },
+            {
+                title: 'REST & Docker',
+                description: 'FastAPI, контейнеризация Docker, автоматизированное развертывание.',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'Пайплайны данных, ETL, базы данных, автоматизация.',
+            },
+        ],
+        featuredTitle: 'Рекомендуемые проекты',
+        sections: {
+            aboutMe: 'Обо мне',
+            aboutMeText: 'Студент инженерной школы UTT в Труа, специализируюсь на ИИ и Data Science. Увлекаюсь машинным обучением, ищу стажировку.',
+            whatIDo: 'Чем я занимаюсь',
+            skills: 'Навыки',
+            languages: 'Языки',
+            strengths: 'Сильные стороны',
+            projects: 'Проекты',
+            education: 'Образование',
+            experience: 'Опыт',
+            interests: 'Интересы',
+            contact: 'Контакты',
+            openTo: 'Открыт для предложений',
+            openToText: 'Ищу 2-летнюю стажировку с сентября 2026 года в направлениях Data Science / AI & ML / Data Engineering.',
+        },
+        whatIDo: [
+            {
+                title: 'Machine Learning',
+                description: 'Классификация, регрессия, кластеризация, конструирование признаков, оценка моделей.',
+                icon: 'Brain',
+            },
+            {
+                title: 'Deep Learning & CV',
+                description: 'Нейросети, TensorFlow, PyTorch, компьютерное зрение.',
+                icon: 'Eye',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'ETL-пайплайны, базы данных SQL/NoSQL, автоматизация, оркестрация.',
+                icon: 'Database',
+            },
+            {
+                title: 'Развертывание',
+                description: 'REST API, Docker, AWS/Azure, CI/CD.',
+                icon: 'Cloud',
+            },
+        ],
+        skills: [
+            {
+                category: 'ML / DL',
+                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+            },
+            {
+                category: 'Python & Data',
+                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+            },
+            {
+                category: 'Data Engineering',
+                items: ['ETL', 'SQL', 'Airflow', 'Spark', 'Data pipelines'],
+            },
+            {
+                category: 'Развертывание',
+                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS', 'Azure'],
+            },
+            {
+                category: 'Инструменты',
+                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+            },
+        ],
+        languages: [
+            { name: 'Украинский', level: 'Родной', percent: 100 },
+            { name: 'Русский', level: 'Родной', percent: 100 },
+            { name: 'Французский', level: 'C1', percent: 85 },
+            { name: 'Английский', level: 'B2', percent: 70 },
+        ],
+        strengths: [
+            {
+                title: 'Готовность к вызовам',
+                description: 'Люблю решать сложные технические задачи.',
+            },
+            {
+                title: 'Любознательность',
+                description: 'Постоянно слежу за новыми технологиями.',
+            },
+            {
+                title: 'Командный игрок',
+                description: 'Коммуникабелен, эффективно работаю в команде.',
+            },
+        ],
+        projects: [
+            {
+                slug: 'agent-conversationnel-rag',
+                title: 'Диалоговый агент, имитирующий пользователя (RAG)',
+                description: 'Полная RAG-система, симулирующая пользователя.',
+                tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
+                features: ['Ingestion and chunking', 'Векторное индексирование', 'Local LLM', 'REST API', 'Docker'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'tracker-candidatures',
+                title: 'Трекер откликов на вакансии',
+                description: 'Автоматизированное приложение для отслеживания откликов.',
+                tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
+                features: ['Автоматическое получение писем', 'Извлечение информации', 'Синхронизация Google Sheets', 'SQLite', 'Docker'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'prediction-insuffisance-cardiaque',
+                title: 'Прогноз сердечной недостаточности',
+                description: 'Проект ML для прогнозирования сердечной недостаточности.',
+                tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
+                features: ['Исследовательский анализ данных', 'Предобработка', 'Сравнение моделей', 'Клинические метрики', 'Интерпретация (SHAP)'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+        ],
+        education: [
+            {
+                title: 'Инженер компьютерных систем',
+                institution: 'UTT — Университет Технологий Труа',
+                period: '2022 – 2028',
+                location: 'Труа, Франция',
+                description: 'Диплом инженера.',
+            },
+            {
+                title: 'Инженер по кибербезопасности',
+                institution: 'НТУ "ХПИ"',
+                period: '2021 – 2025',
+                location: 'Онлайн',
+                description: 'Диплом инженера.',
+            },
+        ],
+        experience: [
+            {
+                title: 'Стажер',
+                company: 'Chronodrive',
+                period: 'Стажировка',
+                location: 'Франция',
+                description: 'Опыт в сфере дистрибуции.',
+            },
+            {
+                title: 'Агент по недвижимости',
+                company: 'Независимый специалист',
+                period: 'Опыт работы',
+                location: 'Франция',
+                description: 'Управление отношениями с клиентами.',
+            },
+            {
+                title: 'Волонтер',
+                company: 'Волонтерство',
+                period: 'Волонтерство',
+                location: 'Франция',
+                description: 'Организация соревнований по плаванию.',
+            },
+        ],
+        interests: [
+            { title: 'Плавание', description: '17 лет занятий' },
+            { title: 'Киберспорт', description: 'CS2' },
+            { title: 'Формула 1', description: 'Ф1 и автомобилестроение' },
+        ],
+        contactForm: {
+            name: 'Имя',
+            email: 'Email',
+            message: 'Сообщение',
+            send: 'Отправить',
+            success: 'Сообщение успешно отправлено!',
+            error: 'Пожалуйста, заполните все поля.',
+        },
+        footer: {
+            rights: '© 2026 Власов Александр. Все права защищены.',
+        },
+        search: 'Поиск проектов...',
+        filterAll: 'Все',
+        viewProject: 'Смотреть проект',
+        keyFeatures: 'Ключевые фичи',
+        techStack: 'Tech Stack',
+        close: 'Закрыть',
+        noResults: 'Проекты не найдены.',
+    },
+    ua: {
+        profile: {
+            name: 'ВЛАСОВ Олександр',
+            title: 'Студент-інженер ШІ та Data Science',
+            summary: 'Студент-інженер, захоплений ШІ та Data Science, шукаю 2-річне стажування з вересня 2026 року.',
+            location: 'Труа, Франція',
+            availability: 'Стажування на 2 роки з вересня 2026',
+        },
+        contacts: {
+            phone: '+33 7 XX XX XX XX',
+            email: 'vlasov.oleksandr@example.com',
+            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
+            github: 'https://github.com/oleksandr-vlasov',
+        },
+        nav: {
+            home: 'Головна',
+            about: 'Про мене',
+            projects: 'Проєкти',
+            resume: 'Резюме',
+            contact: 'Контакти',
+        },
+        hero: {
+            greeting: 'Привіт, я',
+            subtitle: 'Студент-інженер ШІ та Data Science',
+            description: 'Шукаю стажування на 2 роки з вересня 2026 року в Data Science, AI & ML, Data Engineering.',
+            cta1: 'Дивитись проєкти',
+            cta2: 'Завантажити CV',
+        },
+        highlights: [
+            {
+                title: 'RAG & LLM',
+                description: 'Діалогові агенти, RAG, Ollama.',
+            },
+            {
+                title: 'ML Pipelines',
+                description: 'Моделі машинного навчання, scikit-learn, TensorFlow.',
+            },
+            {
+                title: 'REST & Docker',
+                description: 'FastAPI, Docker, автоматизоване розгортання.',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'Пайплайни даних, ETL, бази даних.',
+            },
+        ],
+        featuredTitle: 'Вибрані проєкти',
+        sections: {
+            aboutMe: 'Про мене',
+            aboutMeText: 'Студент інженерної школи UTT в Труа, напрямок ШІ та Data Science.',
+            whatIDo: 'Чим я займаюся',
+            skills: 'Навички',
+            languages: 'Мови',
+            strengths: 'Сильні сторони',
+            projects: 'Проєкти',
+            education: 'Освіта',
+            experience: 'Досвід роботи',
+            interests: 'Інтереси',
+            contact: 'Контакти',
+            openTo: 'Відкритий до пропозицій',
+            openToText: 'Я шукаю 2-річне стажування з вересня 2026 року.',
+        },
+        whatIDo: [
+            {
+                title: 'Machine Learning',
+                description: 'Класифікація, регресія, кластеризація.',
+                icon: 'Brain',
+            },
+            {
+                title: 'Deep Learning & CV',
+                description: 'Нейромережі, TensorFlow, PyTorch.',
+                icon: 'Eye',
+            },
+            {
+                title: 'Data Engineering',
+                description: 'ETL-пайплайни, бази даних SQL/NoSQL.',
+                icon: 'Database',
+            },
+            {
+                title: 'Розгортання',
+                description: 'REST API, Docker, CI/CD.',
+                icon: 'Cloud',
+            },
+        ],
+        skills: [
+            {
+                category: 'ML / DL',
+                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+            },
+            {
+                category: 'Python & Data',
+                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+            },
+            {
+                category: 'Data Engineering',
+                items: ['ETL', 'SQL', 'Airflow', 'Spark', 'Data pipelines'],
+            },
+            {
+                category: 'Розгортання',
+                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS', 'Azure'],
+            },
+            {
+                category: 'Інструменти',
+                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+            },
+        ],
+        languages: [
+            { name: 'Українська', level: 'Рідна', percent: 100 },
+            { name: 'Російська', level: 'Рідна', percent: 100 },
+            { name: 'Французька', level: 'C1', percent: 85 },
+            { name: 'Англійська', level: 'B2', percent: 70 },
+        ],
+        strengths: [
+            {
+                title: 'Готовність до викликів',
+                description: 'Вирішую складні технічні завдання.',
+            },
+            {
+                title: 'Допитливість',
+                description: 'Слідкую за новими технологіями.',
+            },
+            {
+                title: 'Командний гравець',
+                description: 'Ефективно працюю в команді.',
+            },
+        ],
+        projects: [
+            {
+                slug: 'agent-conversationnel-rag',
+                title: 'Діалоговий агент, що імітує користувача (RAG)',
+                description: 'Повноцінна RAG-система.',
+                tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
+                features: ['Автоматичне завантаження', 'Векторне індексування', 'Генерація відповідей', 'REST API', 'Docker'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'tracker-candidatures',
+                title: 'Трекер відгуків на вакансії',
+                description: 'Застосунок для автоматизованого відстеження відгуків.',
+                tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
+                features: ['Отримання листів', 'Вилучення інформації', 'Google Sheets', 'SQLite', 'Docker'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+            {
+                slug: 'prediction-insuffisance-cardiaque',
+                title: 'Прогноз серцевої недостатності',
+                description: 'Проєкт машинного навчання.',
+                tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
+                features: ['Аналіз', 'Передобробка', 'Порівняння моделей', 'Метрики', 'SHAP'],
+                featured: true,
+                github: '#',
+                live: '#',
+            },
+        ],
+        education: [
+            {
+                title: 'Інженер комп\'ютерних систем',
+                institution: 'UTT',
+                period: '2022 – 2028',
+                location: 'Труа, Франція',
+                description: 'Диплом інженера.',
+            },
+            {
+                title: 'Інженер з кібербезпеки',
+                institution: 'НТУ "ХПІ"',
+                period: '2021 – 2025',
+                location: 'Онлайн',
+                description: 'Диплом інженера.',
+            },
+        ],
+        experience: [
+            {
+                title: 'Стажер',
+                company: 'Chronodrive',
+                period: 'Стажування',
+                location: 'Франція',
+                description: 'Стажування у сфері дистрибуції.',
+            },
+            {
+                title: 'Агент з нерухомості',
+                company: 'Незалежний фахівець',
+                period: 'Досвід',
+                location: 'Франція',
+                description: 'Управління відносинами з клієнтами.',
+            },
+            {
+                title: 'Волонтер',
+                company: 'Волонтерство',
+                period: 'Волонтерство',
+                location: 'Франція',
+                description: 'Допомога в організації змагань.',
+            },
+        ],
+        interests: [
+            { title: 'Плавання', description: '17 років занять' },
+            { title: 'Кіберспорт', description: 'CS2' },
+            { title: 'Формула 1', description: 'Захоплення Ф1' },
+        ],
+        contactForm: {
+            name: 'Ім\'я',
+            email: 'Email',
+            message: 'Повідомлення',
+            send: 'Відправити',
+            success: 'Успішно відправлено!',
+            error: 'Всі поля обов\'язкові.',
+        },
+        footer: {
+            rights: '© 2026 Власов Олександр. Всі права захищені.',
+        },
+        search: 'Пошук...',
+        filterAll: 'Всі',
+        viewProject: 'Проєкт',
+        keyFeatures: 'Ключові фічі',
+        techStack: 'Стек технологій',
+        close: 'Закрити',
+        noResults: 'Проєкти не знайдені.',
+    },
+};

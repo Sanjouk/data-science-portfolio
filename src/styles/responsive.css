@@ -1,0 +1,36 @@
+/* =========================================
+   RESPONSIVE / MEDIA QUERIES
+   ========================================= */
+@media (max-width: 640px) {
+  .hero {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid,
+  .what-grid,
+  .strengths-grid,
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunity-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+}

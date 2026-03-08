@@ -1,0 +1,143 @@
+/* =========================================
+   NAVBAR & TOGGLES
+   ========================================= */
+.navbar {
+  position: relative;
+  z-index: 100;
+  width: min(1160px, calc(100% - 80px));
+  margin: 28px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-logo {
+  display: none;
+}
+
+.navbar-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  padding: 0 22px 14px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.28);
+  min-width: 620px;
+  justify-content: center;
+}
+
+.navbar-link {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-heading);
+  transition: opacity 0.2s;
+}
+
+.navbar-link:hover {
+  opacity: 0.7;
+}
+
+.navbar-link--active {
+  color: var(--bg) !important;
+  background: var(--text-heading) !important;
+  border-radius: 999px;
+  padding: 2px 10px 4px;
+}
+
+.navbar-link--active::after {
+  display: none;
+}
+
+.navbar-actions {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: calc(100% - 40px);
+    margin-top: 22px;
+  }
+
+  .navbar-links {
+    min-width: auto;
+    width: 100%;
+    gap: 28px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    width: calc(100% - 24px);
+    margin-top: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .navbar-links {
+    gap: 14px;
+    padding: 0 0 10px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .navbar-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-link {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  .navbar-actions {
+    top: -2px;
+    right: 0;
+    gap: 6px;
+  }
+
+  .theme-toggle,
+  .lang-toggle {
+    font-size: 16px;
+  }
+}
+
+/* =========================================
+   THEME & LANGUAGE TOGGLE
+   ========================================= */
+.theme-toggle,
+.lang-toggle {
+  border: none;
+  background: transparent;
+  color: var(--text-heading);
+  cursor: pointer;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: opacity 0.2s;
+  font-family: var(--font);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover,
+.lang-toggle:hover {
+  opacity: 0.7;
+}
