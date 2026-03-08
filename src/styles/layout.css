@@ -6,6 +6,8 @@
   z-index: 1;
   min-height: calc(100vh - 160px);
   overflow: visible;
+  /* Spacing to prevent fixed navbar overlapping top content */
+  padding-top: 80px; 
 }
 
 
