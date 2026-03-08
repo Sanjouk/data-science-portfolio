@@ -31,7 +31,7 @@ const cardVariants = {
 
 export default function About() {
   const { t } = useLang();
-  useMeasuredLines();
+  useMeasuredLines([t]);
 
   useEffect(() => {
     setSEO(t.nav.about, t.sections.aboutMeText);

@@ -210,6 +210,8 @@
 }
 
 .timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-static-hover);
   border-color: var(--border-accent);
 }
 

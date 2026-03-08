@@ -6,7 +6,7 @@ export default function TechFilter({ techs, selected, onChange }) {
   return (
     <div className="tech-filter">
       <button
-        className={`tech-chip ${selected === '' ? 'tech-chip--active' : ''}`}
+        className={`tech-chip ${selected.length === 0 ? 'tech-chip--active' : ''}`}
         onClick={() => onChange('')}
       >
         {t.filterAll}
@@ -14,8 +14,8 @@ export default function TechFilter({ techs, selected, onChange }) {
       {techs.map((tech) => (
         <button
           key={tech}
-          className={`tech-chip ${selected === tech ? 'tech-chip--active' : ''}`}
-          onClick={() => onChange(tech === selected ? '' : tech)}
+          className={`tech-chip ${selected.includes(tech) ? 'tech-chip--active' : ''}`}
+          onClick={() => onChange(tech)}
         >
           {tech}
         </button>

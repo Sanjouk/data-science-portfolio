@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export function useMeasuredLines() {
+export function useMeasuredLines(deps = []) {
     useEffect(() => {
         const measure = () => {
             const titles = document.querySelectorAll('.measured-title-text');
@@ -32,7 +32,6 @@ export function useMeasuredLines() {
             clearTimeout(timeout1);
             clearTimeout(timeout2);
             window.removeEventListener('resize', measure);
-            document.documentElement.style.removeProperty('--title-line-width');
         };
-    }, []);
+    }, [...deps]);
 }

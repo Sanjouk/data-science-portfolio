@@ -22,6 +22,14 @@
     0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
     13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
   --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.7);
+  --shadow-interactive-hover: 
+    0 8px 8px 0 rgba(255, 255, 255, 0.45) inset, 
+    0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
+    13px 20px 30px 0 rgba(0, 0, 0, 0.4);
+  --shadow-static-hover: 
+    0 4px 4px 0 rgba(255, 255, 255, 0.4) inset, 
+    0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
+    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.28) 0%, rgba(196, 187, 240, 0.1) 100%);
   --radius: 31px;
   --radius-sm: 999px;
@@ -62,6 +70,14 @@
     0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
     13px 7px 18.2px 0 rgba(98, 84, 165, 0.12);
   --shadow-hover: 0 20px 50px rgba(98, 84, 165, 0.18);
+  --shadow-interactive-hover: 
+    0 8px 8px 0 rgba(255, 255, 255, 0.6) inset, 
+    0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
+    13px 20px 30px 0 rgba(98, 84, 165, 0.22);
+  --shadow-static-hover: 
+    0 4px 4px 0 rgba(255, 255, 255, 0.6) inset, 
+    0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
+    13px 7px 18.2px 0 rgba(98, 84, 165, 0.15);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.1) 0%, rgba(196, 187, 240, 0.2) 100%);
   --toast-bg: #fff;
   --year-opacity: 1.0;

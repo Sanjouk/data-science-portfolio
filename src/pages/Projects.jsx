@@ -10,14 +10,26 @@ import { useMeasuredLines } from '../hooks/useMeasuredLines';
 
 export default function Projects() {
   const { t } = useLang();
-  useMeasuredLines();
+  useMeasuredLines([t]);
   const [search, setSearch] = useState('');
-  const [techFilter, setTechFilter] = useState('');
+  const [techFilter, setTechFilter] = useState([]);
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     setSEO(t.nav.projects, t.sections.aboutMeText);
   }, [t]);
+
+  const toggleTech = (tech) => {
+    if (tech === '') {
+      setTechFilter([]);
+    } else {
+      setTechFilter(prev => 
+        prev.includes(tech) 
+          ? prev.filter(t => t !== tech) 
+          : [...prev, tech]
+      );
+    }
+  };
 
   // Collect all unique techs
   const allTechs = useMemo(() => {
@@ -35,8 +47,10 @@ export default function Projects() {
       list = list.filter((p) => p.title.toLowerCase().includes(q));
     }
 
-    if (techFilter) {
-      list = list.filter((p) => p.tech.includes(techFilter));
+    if (techFilter.length > 0) {
+      list = list.filter((p) => 
+        techFilter.every(t => p.tech.includes(t))
+      );
     }
 
     list.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
@@ -51,7 +65,7 @@ export default function Projects() {
 
         <div className="projects-controls">
           <SearchBar value={search} onChange={setSearch} />
-          <TechFilter techs={allTechs} selected={techFilter} onChange={setTechFilter} />
+          <TechFilter techs={allTechs} selected={techFilter} onChange={toggleTech} />
         </div>
 
         {filtered.length === 0 ? (

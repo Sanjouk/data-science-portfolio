@@ -29,9 +29,9 @@
 }
 
 .project-card:hover {
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-interactive-hover);
   border-color: var(--accent);
-  transform: translateY(-4px);
 }
 
 .project-card-header {
@@ -171,4 +171,9 @@
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
+}
+
+.tech-chip--active:hover {
+  background: var(--accent-hover);
+  color: #fff;
 }

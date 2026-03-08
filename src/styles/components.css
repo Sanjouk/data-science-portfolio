@@ -129,13 +129,22 @@
   flex-direction: column;
 }
 
+/* Interactive components: lift and deep shadow */
 .highlight-card:hover,
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-interactive-hover);
+  border-color: var(--border-accent);
+}
+
+/* Informative/Static components: subtle lift and glow */
 .what-card:hover,
 .strength-card:hover,
 .interest-card:hover,
-.contact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
+.language-card:hover,
+.skill-group:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-static-hover);
   border-color: var(--border-accent);
 }
 
