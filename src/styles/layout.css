@@ -5,7 +5,9 @@
   position: relative;
   z-index: 1;
   min-height: calc(100vh - 160px);
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 
