@@ -267,6 +267,11 @@
     pointer-events: auto;
   }
 
+  .hero-image-wrapper::before,
+  .hero-image-wrapper::after {
+    display: none;
+  }
+
   .hero-image-wrapper img,
   .hero-image {
     width: clamp(280px, 70vw, 520px);
@@ -276,6 +281,85 @@
   .hero::after,
   .hero::before {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 0.5rem;
+    gap: 1.25rem;
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+  }
+
+  .hero-name {
+    font-size: clamp(2.6rem, 16vw, 4rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-desc {
+    display: block;
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    padding: 0.85rem 1.1rem;
+    border-radius: 24px;
+  }
+
+  .hero-image-wrapper {
+    width: min(100%, 360px);
+    margin-inline: auto;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid var(--border-card);
+    background: color-mix(in srgb, var(--bg-card) 92%, transparent);
+    box-shadow: var(--shadow);
+  }
+
+  .hero-image-wrapper img,
+  .hero-image {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 14%;
+    border-radius: 16px;
+  }
+
+  .hero-blur {
+    left: -34vw;
+    top: -30vh;
+    opacity: 0.45;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    gap: 1rem;
+  }
+
+  .hero-greeting {
+    font-size: 0.95rem;
+  }
+
+  .hero-image-wrapper {
+    width: min(100%, 320px);
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .hero-image-wrapper img,
+  .hero-image {
+    aspect-ratio: 3 / 4;
+    border-radius: 14px;
   }
 }
 
@@ -323,12 +407,28 @@
 }
 
 @media (max-width: 900px) {
+  .section--decorated {
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+
   .right-blur {
-    right: -100px;
-    top: 100px;
-    width: clamp(250px, 60vw, 400px);
-    height: clamp(500px, 100vh, 800px);
-    transform: rotate(90deg) scale(0.6);
-    opacity: 0.5;
+    right: -56px;
+    top: 140px;
+    width: clamp(170px, 42vw, 260px);
+    height: clamp(260px, 52vh, 420px);
+    transform: rotate(90deg) scale(0.72);
+    filter: blur(clamp(32px, 9vw, 52px));
+    opacity: 0.42;
+  }
+}
+
+@media (max-width: 640px) {
+  .section--decorated {
+    overflow: hidden;
+  }
+
+  .right-blur {
+    display: none;
   }
 }

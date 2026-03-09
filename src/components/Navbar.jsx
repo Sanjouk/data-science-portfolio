@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 import { useLang } from '../context/LanguageContext';
@@ -16,6 +17,20 @@ export default function Navbar() {
   const { t } = useLang();
   const location = useLocation();
   const navbarRef = useRef(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return undefined;
+
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isMobileMenuOpen]);
 
   useEffect(() => {
     const navbarNode = navbarRef.current;
@@ -94,11 +109,11 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className="navbar" ref={navbarRef}>
+    <header className={`navbar ${isMobileMenuOpen ? 'navbar--menu-open' : ''}`} ref={navbarRef}>
       <div className="navbar-inner">
         {/* Nav Links */}
         <div className="navbar-menu-shell">
-          <nav className="navbar-links">
+          <nav className="navbar-links navbar-links--desktop">
             {routes.map((r) => (
               <NavLink
                 key={r.path}
@@ -116,8 +131,41 @@ export default function Navbar() {
 
         {/* Actions (Lang, Theme) */}
         <div className="navbar-actions">
-          <LanguageToggle />
-          <ThemeToggle />
+          <div className="navbar-action-group">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
+          <button
+            type="button"
+            className="navbar-mobile-toggle"
+            aria-label={isMobileMenuOpen ? 'Close mobile menu' : 'Open mobile menu'}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-nav-menu"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
+
+        <div
+          id="mobile-nav-menu"
+          className={`navbar-mobile-panel ${isMobileMenuOpen ? 'navbar-mobile-panel--open' : ''}`}
+        >
+          <nav className="navbar-links-mobile">
+            {routes.map((r) => (
+              <NavLink
+                key={`mobile-${r.path}`}
+                to={r.path}
+                end={r.path === '/'}
+                className={({ isActive }) =>
+                  `navbar-mobile-link ${isActive ? 'navbar-mobile-link--active' : ''}`
+                }
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t.nav[r.key]}
+              </NavLink>
+            ))}
+          </nav>
         </div>
       </div>
     </header>
