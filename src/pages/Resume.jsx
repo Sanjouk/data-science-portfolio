@@ -14,7 +14,7 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
 // Import PDF File
-import cvFile from '../assets/cv/Oleksandr_VLASOV_CV_AI _Engineer.pdf';
+import cvFile from '../assets/cv/Oleksandr_VLASOV_CV_Data_Science_fixed.pdf';
 
 // Configure PDFJS Worker for Vite
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
