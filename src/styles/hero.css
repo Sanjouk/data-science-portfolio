@@ -63,6 +63,27 @@
   }
 }
 
+@media (max-width: 1200px) and (min-width: 901px) {
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero-blur {
+    left: -6vw;
+    top: -16vh;
+    width: clamp(230px, 34vw, 360px);
+    height: clamp(360px, 60vh, 560px);
+    transform: rotate(24deg) scale(0.6);
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .hero-blur::before,
+  .hero-blur::after {
+    filter: blur(clamp(42px, 5vw, 68px));
+  }
+}
+
 /* Текст SCROLL */
 .hero::after {
   content: 'SCROLL';
@@ -522,6 +543,22 @@
   z-index: 2; /* Stay above the decoration blur */
 }
 
+@media (max-width: 1200px) and (min-width: 901px) {
+  .section--decorated {
+    overflow: hidden;
+  }
+
+  .right-blur {
+    right: -136px;
+    top: 84px;
+    width: clamp(220px, 32vw, 340px);
+    height: clamp(340px, 54vh, 520px);
+    transform: rotate(90deg) scale(0.5);
+    filter: blur(clamp(34px, 4.8vw, 58px));
+    opacity: 0.2;
+  }
+}
+
 @media (max-width: 900px) {
   .right-blur {
     right: -52px;
@@ -561,5 +598,80 @@
     width: clamp(210px, 66vw, 280px);
     height: clamp(260px, 45vh, 360px);
     opacity: 0.48;
+  }
+}
+
+/* iPad Pro profile: allow hero blur to overlap and keep 2026 + right blur */
+@media (min-width: 901px) and (max-width: 1366px) and (min-height: 900px) {
+  .hero {
+    overflow: visible;
+  }
+
+  .hero-blur {
+    left: -10vw;
+    top: -18vh;
+    width: clamp(300px, 42vw, 520px);
+    height: clamp(520px, 78vh, 900px);
+    transform: rotate(26deg) scale(0.78);
+    opacity: 0.3;
+    z-index: 2;
+  }
+
+  .hero-blur::before,
+  .hero-blur::after {
+    filter: blur(clamp(46px, 6vw, 84px));
+  }
+
+  .section--decorated {
+    overflow: visible;
+  }
+
+  .section--year,
+  .year-block,
+  .year-svg-row {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section--year {
+    display: flex;
+  }
+
+  .right-blur {
+    display: block;
+    right: calc(-1 * clamp(72px, 9.5vw, 152px));
+    top: calc(100% - clamp(220px, 32vh, 360px));
+    width: clamp(380px, 56vw, 640px);
+    height: clamp(500px, 72vh, 920px);
+    transform: rotate(90deg) scale(0.84);
+    filter: blur(clamp(22px, 4.2vw, 40px));
+    opacity: 0.52;
+    z-index: 1;
+  }
+}
+
+/* iPad Air/Mini: place right blur under 2026 using adaptive math */
+@media (min-width: 700px) and (max-width: 1180px) and (max-height: 1200px) {
+  .section--decorated {
+    overflow: visible;
+  }
+
+  .section--year,
+  .year-block,
+  .year-svg-row {
+    position: relative;
+    z-index: 2;
+  }
+
+  .right-blur {
+    display: block;
+    right: calc(-1 * clamp(58px, 8.8vw, 126px));
+    top: calc(100% - clamp(190px, 30vh, 320px));
+    width: clamp(340px, 62vw, 600px);
+    height: clamp(460px, 70vh, 860px);
+    transform: rotate(90deg) scale(0.82);
+    filter: blur(clamp(22px, 4.2vw, 38px));
+    opacity: 0.5;
+    z-index: 1;
   }
 }
