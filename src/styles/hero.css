@@ -286,6 +286,70 @@
   }
 }
 
+@media (max-width: 1024px) and (min-width: 641px) {
+  .hero {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 38vw);
+    align-items: center;
+    gap: clamp(0.75rem, 2.2vw, 1.5rem);
+    padding-top: 0.35rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 0 1.1rem 0.25rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2.6rem, 6.4vw, 4.2rem);
+    margin-bottom: 0.9rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.84rem, 1.8vw, 1rem);
+    margin-bottom: 1rem;
+    max-width: 430px;
+  }
+
+  .hero-desc {
+    font-size: 0.92rem;
+    line-height: 1.38;
+    max-width: 460px;
+    padding: 0.78rem 1rem;
+  }
+
+  .hero-image-wrapper {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: end;
+    pointer-events: auto;
+  }
+
+  .hero-image-wrapper::before,
+  .hero-image-wrapper::after {
+    display: none;
+  }
+
+  .hero-image-wrapper img,
+  .hero-image {
+    width: min(100%, 430px);
+    max-width: 100%;
+    margin-left: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    object-position: bottom right;
+  }
+
+  .hero::after,
+  .hero::before {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .hero {
     padding-top: 0.5rem;
