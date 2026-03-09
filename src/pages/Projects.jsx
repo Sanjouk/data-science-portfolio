@@ -84,9 +84,7 @@ export default function Projects() {
         )}
       </section>
 
-      {selected && (
-        <ProjectModal project={selected} onClose={() => setSelected(null)} />
-      )}
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }
