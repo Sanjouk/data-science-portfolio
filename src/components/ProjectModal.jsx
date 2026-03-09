@@ -58,7 +58,7 @@ export default function ProjectModal({ project, onClose }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn--primary"
+              className="modal-action-btn modal-action-btn--github"
             >
               <Github size={16} /> GitHub
             </a>
@@ -66,7 +66,7 @@ export default function ProjectModal({ project, onClose }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn--outline"
+              className="modal-action-btn modal-action-btn--live"
             >
               <ExternalLink size={16} /> Live
             </a>
