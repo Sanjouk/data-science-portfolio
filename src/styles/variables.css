@@ -41,6 +41,7 @@
   --hero-blur-bg: #6254A5; /* Specified for dark mode */
   --skills-blur-color: rgba(98, 84, 165, 0.95);
   --skills-blur-color-mid: rgba(98, 84, 165, 0.5);
+  --footer-color: #C4BBF0;
 
   /* Dynamic Card Tokens */
   --card-header-min-height: clamp(70px, 10vw, 114px);
@@ -84,4 +85,5 @@
   --hero-blur-bg: #C4BBF0; /* Specified for light mode */
   --skills-blur-color: rgba(196, 187, 240, 0.95);
   --skills-blur-color-mid: rgba(196, 187, 240, 0.55);
+  --footer-color: #6254A5;
 }
