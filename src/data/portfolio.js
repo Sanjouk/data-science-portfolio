@@ -494,10 +494,11 @@ export const portfolio = {
     ru: {
         profile: {
             name: 'ВЛАСОВ Александр',
-            title: 'Студент-инженер ИИ & Data Science',
-            summary: 'Студент-инженер, увлеченный ИИ и Data Science, ищу 2-летнюю стажировку с сентября 2026 года в направлениях: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
+            title: 'Студент-инженер ИИ и Data Science',
+            summary:
+                'Студент-инженер, увлечённый ИИ и Data Science. Ищу 2-летнюю стажировку с сентября 2026 года в сферах: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
             location: 'Труа, Франция',
-            availability: 'Стажировка на 2 года с сентября 2026',
+            availability: '2-летняя стажировка с сентября 2026',
         },
         contacts: {
             phone: '+33 7 XX XX XX XX',
@@ -513,16 +514,17 @@ export const portfolio = {
             contact: 'Контакты',
         },
         hero: {
-            greeting: 'Привет, я',
-            subtitle: 'Студент-инженер ИИ & Data Science',
-            description: 'Ищу 2-летнюю стажировку с сентября 2026 года в Data Science, AI & ML, Data Engineering.',
+            greeting: 'Здравствуйте, я',
+            subtitle: 'Студент-инженер ИИ и Data Science',
+            description:
+                'Ищу 2-летнюю стажировку с сентября 2026 года в Data Science, AI & ML, Data Engineering.',
             cta1: 'Смотреть проекты',
             cta2: 'Скачать CV',
         },
         highlights: [
             {
                 title: 'RAG & LLM',
-                description: 'Диалоговые агенты, генерация с дополненной выборкой (RAG), интеграция Ollama.',
+                description: 'Диалоговые агенты, retrieval-augmented generation, интеграция Ollama.',
             },
             {
                 title: 'ML Pipelines',
@@ -530,17 +532,18 @@ export const portfolio = {
             },
             {
                 title: 'REST & Docker',
-                description: 'FastAPI, контейнеризация Docker, автоматизированное развертывание.',
+                description: 'API на FastAPI, контейнеризация Docker, автоматизированное развёртывание.',
             },
             {
                 title: 'Data Engineering',
                 description: 'Пайплайны данных, ETL, базы данных, автоматизация.',
             },
         ],
-        featuredTitle: 'Рекомендуемые проекты',
+        featuredTitle: 'Избранные проекты',
         sections: {
             aboutMe: 'Обо мне',
-            aboutMeText: 'Студент инженерной школы UTT в Труа, специализируюсь на ИИ и Data Science. Увлекаюсь машинным обучением, ищу стажировку.',
+            aboutMeText:
+                'Студент инженерной школы UTT (University of Technology of Troyes) по направлению Digital Systems, специализация — ИИ и Data Science. Увлечён машинным обучением, глубоким обучением и инженерией данных, создаю практические проекты на стыке исследований и внедрения. Сейчас ищу 2-летнюю стажировку, чтобы развивать навыки в индустрии.',
             whatIDo: 'Чем я занимаюсь',
             skills: 'Навыки',
             languages: 'Языки',
@@ -550,18 +553,19 @@ export const portfolio = {
             experience: 'Опыт',
             interests: 'Интересы',
             contact: 'Контакты',
-            openTo: 'Открыт для предложений',
-            openToText: 'Ищу 2-летнюю стажировку с сентября 2026 года в направлениях Data Science / AI & ML / Data Engineering.',
+            openTo: 'Открыт к возможностям',
+            openToText:
+                'Ищу 2-летнюю стажировку с сентября 2026 года в направлениях Data Science / AI & ML / Data Engineering. Буду рад вашему сообщению!',
         },
         whatIDo: [
             {
                 title: 'Machine Learning',
-                description: 'Классификация, регрессия, кластеризация, конструирование признаков, оценка моделей.',
+                description: 'Классификация, регрессия, кластеризация, feature engineering, оценка моделей.',
                 icon: 'Brain',
             },
             {
                 title: 'Deep Learning & CV',
-                description: 'Нейросети, TensorFlow, PyTorch, компьютерное зрение.',
+                description: 'Нейронные сети, TensorFlow, PyTorch, компьютерное зрение.',
                 icon: 'Eye',
             },
             {
@@ -570,8 +574,8 @@ export const portfolio = {
                 icon: 'Database',
             },
             {
-                title: 'Развертывание',
-                description: 'REST API, Docker, AWS/Azure, CI/CD.',
+                title: 'Развёртывание',
+                description: 'REST API (FastAPI), Docker, основы AWS/Azure, CI/CD.',
                 icon: 'Cloud',
             },
         ],
@@ -581,16 +585,16 @@ export const portfolio = {
                 items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
             },
             {
-                category: 'Python & Data',
+                category: 'Python и Data',
                 items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
             },
             {
                 category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow', 'Spark', 'Data pipelines'],
+                items: ['ETL', 'SQL', 'Airflow (базовые знания)', 'Spark (базовые знания)', 'Data pipelines'],
             },
             {
-                category: 'Развертывание',
-                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS', 'Azure'],
+                category: 'Развёртывание',
+                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (базовые знания)', 'Azure (базовые знания)'],
             },
             {
                 category: 'Инструменты',
@@ -605,25 +609,32 @@ export const portfolio = {
         ],
         strengths: [
             {
-                title: 'Готовность к вызовам',
-                description: 'Люблю решать сложные технические задачи.',
+                title: 'Люблю вызовы',
+                description: 'Мне нравится выходить за рамки и решать сложные технические задачи.',
             },
             {
-                title: 'Любознательность',
-                description: 'Постоянно слежу за новыми технологиями.',
+                title: 'Любознательный',
+                description: 'Постоянно изучаю новые технологии и лучшие практики.',
             },
             {
                 title: 'Командный игрок',
-                description: 'Коммуникабелен, эффективно работаю в команде.',
+                description: 'Коммуникабелен и внимателен к людям, эффективно работаю в команде.',
             },
         ],
         projects: [
             {
                 slug: 'agent-conversationnel-rag',
                 title: 'Диалоговый агент, имитирующий пользователя (RAG)',
-                description: 'Полная RAG-система, симулирующая пользователя.',
+                description:
+                    'Полноценная RAG-система для симуляции пользователя через диалогового агента. Использует загрузку документов, векторную индексацию и генерацию с дополненной выборкой.',
                 tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
-                features: ['Ingestion and chunking', 'Векторное индексирование', 'Local LLM', 'REST API', 'Docker'],
+                features: [
+                    'Автоматическая загрузка документов и chunking',
+                    'Векторная индексация в ChromaDB',
+                    'Генерация ответов через Ollama (локальная LLM)',
+                    'REST API на FastAPI',
+                    'Полная контейнеризация в Docker',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -631,9 +642,16 @@ export const portfolio = {
             {
                 slug: 'tracker-candidatures',
                 title: 'Трекер откликов на вакансии',
-                description: 'Автоматизированное приложение для отслеживания откликов.',
+                description:
+                    'Автоматизированное приложение для отслеживания откликов на вакансии. Получает письма, извлекает ключевую информацию и организует её в дашборде.',
                 tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
-                features: ['Автоматическое получение писем', 'Извлечение информации', 'Синхронизация Google Sheets', 'SQLite', 'Docker'],
+                features: [
+                    'Автоматическое получение писем через Gmail API',
+                    'Извлечение информации с помощью LLM (Ollama)',
+                    'Синхронизация с Google Sheets',
+                    'Локальное хранение в SQLite',
+                    'Автоматизированный Docker-пайплайн',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -641,9 +659,16 @@ export const portfolio = {
             {
                 slug: 'prediction-insuffisance-cardiaque',
                 title: 'Прогноз сердечной недостаточности',
-                description: 'Проект ML для прогнозирования сердечной недостаточности.',
+                description:
+                    'Проект машинного обучения для прогнозирования сердечной недостаточности на основе медицинских данных. Сравнение нескольких моделей и анализ признаков.',
                 tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
-                features: ['Исследовательский анализ данных', 'Предобработка', 'Сравнение моделей', 'Клинические метрики', 'Интерпретация (SHAP)'],
+                features: [
+                    'Исследовательский анализ медицинских данных',
+                    'Предобработка и feature engineering',
+                    'Сравнение моделей (Random Forest, XGBoost, NN)',
+                    'Оценка по клиническим метрикам',
+                    'Интерпретируемые визуализации (SHAP)',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -651,54 +676,59 @@ export const portfolio = {
         ],
         education: [
             {
-                title: 'Инженер компьютерных систем',
-                institution: 'UTT — Университет Технологий Труа',
+                title: 'Инженер цифровых систем',
+                institution: 'UTT — University of Technology of Troyes',
                 period: '2022 – 2028',
                 location: 'Труа, Франция',
-                description: 'Диплом инженера.',
+                description:
+                    'Инженерная программа со специализацией в ИИ и Data Science. Практические проекты, стажировки и обучение в компании.',
             },
             {
                 title: 'Инженер по кибербезопасности',
-                institution: 'НТУ "ХПИ"',
+                institution: 'NTU "KhPI" — National Technical University',
                 period: '2021 – 2025',
                 location: 'Онлайн',
-                description: 'Диплом инженера.',
+                description:
+                    'Программа по компьютерной инженерии со специализацией в кибербезопасности. Параллельное обучение.',
             },
         ],
         experience: [
             {
-                title: 'Стажер',
+                title: 'Стажёр',
                 company: 'Chronodrive',
                 period: 'Стажировка',
                 location: 'Франция',
-                description: 'Опыт в сфере дистрибуции.',
+                description:
+                    'Стажировка в сфере дистрибуции. Знакомство с профессиональной средой и логистическими процессами.',
             },
             {
                 title: 'Агент по недвижимости',
-                company: 'Независимый специалист',
+                company: 'Независимый',
                 period: 'Опыт работы',
                 location: 'Франция',
-                description: 'Управление отношениями с клиентами.',
+                description:
+                    'Управление отношениями с клиентами, переговоры и сопровождение сделок с недвижимостью.',
             },
             {
-                title: 'Волонтер',
-                company: 'Волонтерство',
-                period: 'Волонтерство',
+                title: 'Волонтёр — соревнования по плаванию',
+                company: 'Волонтёрство',
+                period: 'Волонтёрская деятельность',
                 location: 'Франция',
-                description: 'Организация соревнований по плаванию.',
+                description:
+                    'Организация и помощь на соревнованиях по плаванию. Координация команды и управление событиями.',
             },
         ],
         interests: [
-            { title: 'Плавание', description: '17 лет занятий', icon: 'Waves' },
-            { title: 'Киберспорт', description: 'CS2 — соревнования и стратегия', icon: 'Gamepad2' },
-            { title: 'Формула 1', description: 'Ф1 и автомобилестроение', icon: 'Trophy' },
+            { title: 'Плавание', description: '17 лет практики', icon: 'Waves' },
+            { title: 'Киберспорт', description: 'CS2 — соревнование и стратегия', icon: 'Gamepad2' },
+            { title: 'Формула 1', description: 'Увлечение F1 и автомобильной инженерией', icon: 'Trophy' },
         ],
         contactForm: {
             name: 'Имя',
             email: 'Email',
             message: 'Сообщение',
             send: 'Отправить',
-            success: 'Сообщение успешно отправлено!',
+            success: 'Сообщение успешно отправлено! (симуляция)',
             error: 'Пожалуйста, заполните все поля.',
         },
         footer: {
@@ -706,9 +736,9 @@ export const portfolio = {
         },
         search: 'Поиск проектов...',
         filterAll: 'Все',
-        viewProject: 'Смотреть проект',
-        keyFeatures: 'Ключевые фичи',
-        techStack: 'Tech Stack',
+        viewProject: 'Посмотреть проект',
+        keyFeatures: 'Ключевые функции',
+        techStack: 'Технологический стек',
         close: 'Закрыть',
         noResults: 'Проекты не найдены.',
     },
@@ -716,9 +746,10 @@ export const portfolio = {
         profile: {
             name: 'ВЛАСОВ Олександр',
             title: 'Студент-інженер ШІ та Data Science',
-            summary: 'Студент-інженер, захоплений ШІ та Data Science, шукаю 2-річне стажування з вересня 2026 року.',
+            summary:
+                'Студент-інженер, захоплений ШІ та Data Science. Шукаю 2-річне стажування з вересня 2026 року у сферах: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
             location: 'Труа, Франція',
-            availability: 'Стажування на 2 роки з вересня 2026',
+            availability: '2-річне стажування з вересня 2026',
         },
         contacts: {
             phone: '+33 7 XX XX XX XX',
@@ -734,65 +765,68 @@ export const portfolio = {
             contact: 'Контакти',
         },
         hero: {
-            greeting: 'Привіт, я',
+            greeting: 'Вітаю, я',
             subtitle: 'Студент-інженер ШІ та Data Science',
-            description: 'Шукаю стажування на 2 роки з вересня 2026 року в Data Science, AI & ML, Data Engineering.',
-            cta1: 'Дивитись проєкти',
+            description:
+                'Шукаю 2-річне стажування з вересня 2026 року в Data Science, AI & ML, Data Engineering.',
+            cta1: 'Дивитися проєкти',
             cta2: 'Завантажити CV',
         },
         highlights: [
             {
                 title: 'RAG & LLM',
-                description: 'Діалогові агенти, RAG, Ollama.',
+                description: 'Діалогові агенти, retrieval-augmented generation, інтеграція Ollama.',
             },
             {
                 title: 'ML Pipelines',
-                description: 'Моделі машинного навчання, scikit-learn, TensorFlow.',
+                description: 'Моделі машинного навчання, scikit-learn, TensorFlow, прогнозування.',
             },
             {
                 title: 'REST & Docker',
-                description: 'FastAPI, Docker, автоматизоване розгортання.',
+                description: 'API на FastAPI, контейнеризація Docker, автоматизоване розгортання.',
             },
             {
                 title: 'Data Engineering',
-                description: 'Пайплайни даних, ETL, бази даних.',
+                description: 'Пайплайни даних, ETL, бази даних, автоматизація.',
             },
         ],
-        featuredTitle: 'Вибрані проєкти',
+        featuredTitle: 'Рекомендовані проєкти',
         sections: {
             aboutMe: 'Про мене',
-            aboutMeText: 'Студент інженерної школи UTT в Труа, напрямок ШІ та Data Science.',
-            whatIDo: 'Чим я займаюся',
+            aboutMeText:
+                'Студент інженерної школи UTT (University of Technology of Troyes) за напрямом Digital Systems, спеціалізація — ШІ та Data Science. Захоплююся машинним навчанням, deep learning та інженерією даних, створюю практичні проєкти на стику досліджень і впровадження. Наразі шукаю 2-річне стажування, щоб розвивати навички в індустрії.',
+            whatIDo: 'Що я роблю',
             skills: 'Навички',
             languages: 'Мови',
             strengths: 'Сильні сторони',
             projects: 'Проєкти',
             education: 'Освіта',
-            experience: 'Досвід роботи',
+            experience: 'Досвід',
             interests: 'Інтереси',
             contact: 'Контакти',
-            openTo: 'Відкритий до пропозицій',
-            openToText: 'Я шукаю 2-річне стажування з вересня 2026 року.',
+            openTo: 'Відкритий до можливостей',
+            openToText:
+                'Шукаю 2-річне стажування з вересня 2026 року в напрямах Data Science / AI & ML / Data Engineering. Буду радий вашому повідомленню!',
         },
         whatIDo: [
             {
                 title: 'Machine Learning',
-                description: 'Класифікація, регресія, кластеризація.',
+                description: 'Класифікація, регресія, кластеризація, feature engineering, оцінка моделей.',
                 icon: 'Brain',
             },
             {
                 title: 'Deep Learning & CV',
-                description: 'Нейромережі, TensorFlow, PyTorch.',
+                description: 'Нейронні мережі, TensorFlow, PyTorch, комп’ютерний зір.',
                 icon: 'Eye',
             },
             {
                 title: 'Data Engineering',
-                description: 'ETL-пайплайни, бази даних SQL/NoSQL.',
+                description: 'ETL-пайплайни, бази даних SQL/NoSQL, автоматизація, оркестрація.',
                 icon: 'Database',
             },
             {
                 title: 'Розгортання',
-                description: 'REST API, Docker, CI/CD.',
+                description: 'REST API (FastAPI), Docker, базові знання AWS/Azure, CI/CD.',
                 icon: 'Cloud',
             },
         ],
@@ -802,16 +836,16 @@ export const portfolio = {
                 items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
             },
             {
-                category: 'Python & Data',
+                category: 'Python та Data',
                 items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
             },
             {
                 category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow', 'Spark', 'Data pipelines'],
+                items: ['ETL', 'SQL', 'Airflow (базові знання)', 'Spark (базові знання)', 'Data pipelines'],
             },
             {
                 category: 'Розгортання',
-                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS', 'Azure'],
+                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (базові знання)', 'Azure (базові знання)'],
             },
             {
                 category: 'Інструменти',
@@ -826,25 +860,32 @@ export const portfolio = {
         ],
         strengths: [
             {
-                title: 'Готовність до викликів',
-                description: 'Вирішую складні технічні завдання.',
+                title: 'Люблю виклики',
+                description: 'Мені подобається виходити за межі та вирішувати складні технічні задачі.',
             },
             {
-                title: 'Допитливість',
-                description: 'Слідкую за новими технологіями.',
+                title: 'Допитливий',
+                description: 'Постійно вивчаю нові технології та найкращі практики.',
             },
             {
                 title: 'Командний гравець',
-                description: 'Ефективно працюю в команді.',
+                description: 'Комунікабельний і уважний до людей, ефективно працюю в команді.',
             },
         ],
         projects: [
             {
                 slug: 'agent-conversationnel-rag',
                 title: 'Діалоговий агент, що імітує користувача (RAG)',
-                description: 'Повноцінна RAG-система.',
+                description:
+                    'Повноцінна RAG-система для симуляції користувача через діалогового агента. Використовує завантаження документів, векторну індексацію та генерацію з доповненим пошуком.',
                 tech: ['Python', 'FastAPI', 'Ollama', 'ChromaDB', 'Docker'],
-                features: ['Автоматичне завантаження', 'Векторне індексування', 'Генерація відповідей', 'REST API', 'Docker'],
+                features: [
+                    'Автоматичне завантаження документів і chunking',
+                    'Векторна індексація в ChromaDB',
+                    'Генерація відповідей через Ollama (локальна LLM)',
+                    'REST API на FastAPI',
+                    'Повна контейнеризація в Docker',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -852,9 +893,16 @@ export const portfolio = {
             {
                 slug: 'tracker-candidatures',
                 title: 'Трекер відгуків на вакансії',
-                description: 'Застосунок для автоматизованого відстеження відгуків.',
+                description:
+                    'Автоматизований застосунок для відстеження відгуків на вакансії. Отримує листи, витягує ключову інформацію та організовує її в дашборді.',
                 tech: ['Python', 'Gmail API', 'Google Sheets API', 'Docker', 'SQLite', 'Ollama'],
-                features: ['Отримання листів', 'Вилучення інформації', 'Google Sheets', 'SQLite', 'Docker'],
+                features: [
+                    'Автоматичне отримання листів через Gmail API',
+                    'Витягування інформації за допомогою LLM (Ollama)',
+                    'Синхронізація з Google Sheets',
+                    'Локальне зберігання в SQLite',
+                    'Автоматизований Docker-пайплайн',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -862,9 +910,16 @@ export const portfolio = {
             {
                 slug: 'prediction-insuffisance-cardiaque',
                 title: 'Прогноз серцевої недостатності',
-                description: 'Проєкт машинного навчання.',
+                description:
+                    'Проєкт машинного навчання для прогнозування серцевої недостатності на основі медичних даних. Порівняння кількох моделей і аналіз ознак.',
                 tech: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'],
-                features: ['Аналіз', 'Передобробка', 'Порівняння моделей', 'Метрики', 'SHAP'],
+                features: [
+                    'Дослідницький аналіз медичних даних',
+                    'Передобробка та feature engineering',
+                    'Порівняння моделей (Random Forest, XGBoost, NN)',
+                    'Оцінка за клінічними метриками',
+                    'Інтерпретовані візуалізації (SHAP)',
+                ],
                 featured: true,
                 github: '#',
                 live: '#',
@@ -872,18 +927,20 @@ export const portfolio = {
         ],
         education: [
             {
-                title: 'Інженер комп\'ютерних систем',
-                institution: 'UTT',
+                title: 'Інженер цифрових систем',
+                institution: 'UTT — University of Technology of Troyes',
                 period: '2022 – 2028',
                 location: 'Труа, Франція',
-                description: 'Диплом інженера.',
+                description:
+                    'Інженерна програма зі спеціалізацією у ШІ та Data Science. Практичні проєкти, стажування та навчання в компанії.',
             },
             {
                 title: 'Інженер з кібербезпеки',
-                institution: 'НТУ "ХПІ"',
+                institution: 'NTU "KhPI" — National Technical University',
                 period: '2021 – 2025',
                 location: 'Онлайн',
-                description: 'Диплом інженера.',
+                description:
+                    'Програма з комп’ютерної інженерії зі спеціалізацією в кібербезпеці. Паралельне навчання.',
             },
         ],
         experience: [
@@ -892,45 +949,48 @@ export const portfolio = {
                 company: 'Chronodrive',
                 period: 'Стажування',
                 location: 'Франція',
-                description: 'Стажування у сфері дистрибуції.',
+                description:
+                    'Стажування у сфері дистрибуції. Ознайомлення з професійним середовищем і логістичними процесами.',
             },
             {
                 title: 'Агент з нерухомості',
-                company: 'Незалежний фахівець',
-                period: 'Досвід',
+                company: 'Незалежний',
+                period: 'Досвід роботи',
                 location: 'Франція',
-                description: 'Управління відносинами з клієнтами.',
+                description:
+                    'Управління відносинами з клієнтами, переговори та супровід угод з нерухомістю.',
             },
             {
-                title: 'Волонтер',
+                title: 'Волонтер — змагання з плавання',
                 company: 'Волонтерство',
-                period: 'Волонтерство',
+                period: 'Волонтерська діяльність',
                 location: 'Франція',
-                description: 'Допомога в організації змагань.',
+                description:
+                    'Організація та допомога під час змагань з плавання. Координація команди та управління подіями.',
             },
         ],
         interests: [
-            { title: 'Плавання', description: '17 років занять', icon: 'Waves' },
+            { title: 'Плавання', description: '17 років практики', icon: 'Waves' },
             { title: 'Кіберспорт', description: 'CS2 — змагання та стратегія', icon: 'Gamepad2' },
-            { title: 'Формула 1', description: 'Захоплення Ф1 та автомобільна інженерія', icon: 'Trophy' },
+            { title: 'Формула 1', description: 'Захоплення F1 та автомобільною інженерією', icon: 'Trophy' },
         ],
         contactForm: {
-            name: 'Ім\'я',
+            name: 'Ім’я',
             email: 'Email',
             message: 'Повідомлення',
-            send: 'Відправити',
-            success: 'Успішно відправлено!',
-            error: 'Всі поля обов\'язкові.',
+            send: 'Надіслати',
+            success: 'Повідомлення успішно надіслано! (симуляція)',
+            error: 'Будь ласка, заповніть усі поля.',
         },
         footer: {
-            rights: '© 2026 Власов Олександр. Всі права захищені.',
+            rights: '© 2026 Власов Олександр. Усі права захищено.',
         },
-        search: 'Пошук...',
-        filterAll: 'Всі',
-        viewProject: 'Проєкт',
-        keyFeatures: 'Ключові фічі',
-        techStack: 'Стек технологій',
+        search: 'Пошук проєктів...',
+        filterAll: 'Усі',
+        viewProject: 'Переглянути проєкт',
+        keyFeatures: 'Ключові можливості',
+        techStack: 'Технологічний стек',
         close: 'Закрити',
-        noResults: 'Проєкти не знайдені.',
+        noResults: 'Проєкти не знайдено.',
     },
 };

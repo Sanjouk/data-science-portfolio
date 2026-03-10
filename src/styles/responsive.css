@@ -1,13 +1,162 @@
 /* =========================================
    RESPONSIVE / MEDIA QUERIES
    ========================================= */
-@media (max-width: 640px) {
-  .hero {
-    padding: 4rem 1rem 3rem;
+@media (max-width: 1200px) {
+  .page {
+    padding: 2rem 1.75rem 3.5rem;
   }
 
+  .page--hero {
+    padding: 2rem 1.25rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .timeline-card {
+    padding: 1.35rem 1.5rem;
+  }
+
+  .section {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .page,
+  .page--hero {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-cta {
+    margin-top: 2.25rem;
+  }
+
+  .skills-groups,
+  .languages-grid,
+  .strengths-grid,
+  .interests-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .project-card-title {
+    font-size: 1.45rem;
+  }
+
+  .project-card-header {
+    min-height: 68px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
   .page {
     padding: 1.5rem 1rem 3rem;
+  }
+
+  .page--hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .projects-controls {
+    gap: 0.75rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .project-card-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card-actions {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .timeline {
+    padding-left: 1.2rem;
+  }
+
+  .timeline::before {
+    left: 4px;
+  }
+
+  .timeline-dot {
+    left: -1.2rem;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-card {
+    padding: 1.1rem 1rem;
+    border-radius: 24px;
+  }
+
+  .timeline-meta {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .resume-view-section {
+    margin-top: 3rem;
+    gap: 1.25rem;
+  }
+
+  .resume-viewer-container {
+    padding: 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .opportunity-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1.25rem 0.9rem 2.5rem;
+  }
+
+  .page--hero {
+    padding: 1.1rem 0.85rem;
   }
 
   .projects-grid {
@@ -25,12 +174,84 @@
     grid-template-columns: 1fr;
   }
 
-  .opportunity-banner {
-    flex-direction: column;
-    text-align: center;
+  .skills-groups,
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .year-block,
+  .year-svg-row {
+    justify-content: center;
+  }
+
+  .year-svg-row {
+    gap: 0.5rem;
+  }
+
+  .btn--outline {
+    font-size: 1.05rem;
+    padding: 0.2rem 0.9rem;
   }
 
   .modal-content {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem 0.75rem 2.2rem;
+  }
+
+  .page--hero {
+    padding: 1rem 0.65rem;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 9vw, 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .highlight-card,
+  .what-card,
+  .skill-group,
+  .strength-card,
+  .interest-card,
+  .contact-card,
+  .language-card,
+  .timeline-card,
+  .project-card {
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .search-input {
+    font-size: 0.85rem;
+  }
+
+  .tech-chip {
+    font-size: 0.72rem;
+    padding: 0.28rem 0.72rem;
+  }
+
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-content {
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.05rem;
   }
 }

@@ -341,4 +341,44 @@
   display: flex;
   gap: 0.75rem;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 1.15rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.modal-action-btn:hover {
+  transform: translateY(-1px);
+}
+
+.modal-action-btn--github {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.modal-action-btn--github:hover {
+  background: var(--accent-hover);
+}
+
+.modal-action-btn--live {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.modal-action-btn--live:hover {
+  opacity: 0.9;
 }
