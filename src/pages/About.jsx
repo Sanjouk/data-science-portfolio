@@ -54,27 +54,30 @@ export default function About() {
       </section>
 
       {/* What I Do */}
-      <section className="section">
-        <SectionTitle withLine>{t.sections.whatIDo}</SectionTitle>
-        <div className="what-grid">
-          {t.whatIDo.map((item, i) => {
-            const Icon = iconComponents[item.icon] || Brain;
-            return (
-              <motion.div
-                key={i}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={cardVariants}
-                className="what-card"
-              >
-                <Icon size={28} className="what-icon" />
-                <h3 className="what-title">{item.title}</h3>
-                <p className="what-desc">{item.description}</p>
-              </motion.div>
-            );
-          })}
+      <section className="section section--what-i-do">
+        <div className="what-section">
+          <div className="what-section-blur" aria-hidden="true" />
+          <SectionTitle withLine>{t.sections.whatIDo}</SectionTitle>
+          <div className="what-grid">
+            {t.whatIDo.map((item, i) => {
+              const Icon = iconComponents[item.icon] || Brain;
+              return (
+                <motion.div
+                  key={i}
+                  custom={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={cardVariants}
+                  className="what-card"
+                >
+                  <Icon size={28} className="what-icon" />
+                  <h3 className="what-title">{item.title}</h3>
+                  <p className="what-desc">{item.description}</p>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

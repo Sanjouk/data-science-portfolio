@@ -41,6 +41,9 @@
   --hero-blur-bg: #6254A5; /* Specified for dark mode */
   --skills-blur-color: rgba(98, 84, 165, 0.95);
   --skills-blur-color-mid: rgba(98, 84, 165, 0.5);
+  --about-what-blur-core: rgba(98, 84, 165, 0.7);
+  --about-what-blur-mid: rgba(98, 84, 165, 0.34);
+  --about-what-blur-edge: rgba(196, 187, 240, 0.14);
   --footer-color: #C4BBF0;
 
   /* Dynamic Card Tokens */
@@ -85,5 +88,8 @@
   --hero-blur-bg: #C4BBF0; /* Specified for light mode */
   --skills-blur-color: rgba(196, 187, 240, 0.95);
   --skills-blur-color-mid: rgba(196, 187, 240, 0.55);
+  --about-what-blur-core: rgba(196, 187, 240, 0.92);
+  --about-what-blur-mid: rgba(196, 187, 240, 0.48);
+  --about-what-blur-edge: rgba(196, 187, 240, 0.2);
   --footer-color: #6254A5;
 }

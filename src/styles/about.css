@@ -17,6 +17,45 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section--what-i-do {
+  position: relative;
+  overflow: visible;
+}
+
+.what-section {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.what-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.what-section-blur {
+  position: absolute;
+  left: 50%;
+  bottom: -1rem;
+  width: min(72.5rem, calc(100% + 10rem));
+  height: clamp(18rem, 38vw, 37.6rem);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 50% 72%,
+    var(--about-what-blur-core) 0%,
+    var(--about-what-blur-mid) 42%,
+    var(--about-what-blur-edge) 66%,
+    transparent 84%
+  );
+  filter: blur(clamp(52px, 7vw, 96px));
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .what-icon {
@@ -46,11 +85,28 @@
   .highlights-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .what-section-blur {
+    width: min(64rem, calc(100% + 6rem));
+    height: clamp(19rem, 48vw, 31rem);
+    filter: blur(clamp(44px, 7vw, 80px));
+  }
 }
 
 @media (max-width: 600px) {
   .highlights-grid {
     grid-template-columns: 1fr;
+  }
+
+  .what-section {
+    padding-bottom: 1rem;
+  }
+
+  .what-section-blur {
+    width: calc(100% + 2.5rem);
+    height: clamp(24rem, 108vw, 34rem);
+    bottom: 2.5rem;
+    filter: blur(clamp(36px, 12vw, 60px));
   }
 }
 
