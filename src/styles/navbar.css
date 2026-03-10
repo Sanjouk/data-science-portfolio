@@ -62,8 +62,23 @@
   -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
 }
 
+.navbar-logo-link {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 44px;
+  z-index: 2;
+}
+
 .navbar-logo {
-  display: none;
+  display: block;
+  width: 47px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .navbar-links {
@@ -177,6 +192,18 @@
     gap: 10px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+  }
+
+  .navbar-logo-link {
+    position: static;
+    width: 47px;
+    height: 38px;
+    z-index: 131;
+  }
+
+  .navbar-logo {
+    width: 47px;
+    height: 38px;
   }
 
   .navbar-menu-shell,
@@ -345,6 +372,16 @@
 
   .navbar-inner {
     padding: 8px 12px;
+  }
+
+  .navbar-logo-link {
+    width: 44px;
+    height: 34px;
+  }
+
+  .navbar-logo {
+    width: 42px;
+    height: 34px;
   }
 
   .navbar-mobile-panel,

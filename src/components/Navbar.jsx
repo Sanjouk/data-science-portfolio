@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 import { useLang } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 
 const routes = [
   { path: '/', key: 'home' },
@@ -15,9 +16,13 @@ const routes = [
 
 export default function Navbar() {
   const { t } = useLang();
+  const { theme } = useTheme();
   const location = useLocation();
   const navbarRef = useRef(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const logoSrc = theme === 'light'
+    ? '/branding/logo/logo_night.svg'
+    : '/branding/logo/logo_day.svg';
 
   useEffect(() => {
     if (!isMobileMenuOpen) return undefined;
@@ -111,6 +116,16 @@ export default function Navbar() {
   return (
     <header className={`navbar ${isMobileMenuOpen ? 'navbar--menu-open' : ''}`} ref={navbarRef}>
       <div className="navbar-inner">
+        <NavLink
+          to="/"
+          end
+          className="navbar-logo-link"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-label="Go to home page"
+        >
+          <img src={logoSrc} alt="Vlasov logo" className="navbar-logo" />
+        </NavLink>
+
         {/* Nav Links */}
         <div className="navbar-menu-shell">
           <nav className="navbar-links navbar-links--desktop">
