@@ -33,10 +33,10 @@
   --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.7);
   --shadow-interactive-hover:
     4px 4px 18px 0 rgba(255, 255, 255, 0.09) inset,
-    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+    13px 12px 28px 0 rgba(0, 0, 0, 0.35);
   --shadow-static-hover:
     3px 3px 14px 0 rgba(255, 255, 255, 0.08) inset,
-    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+    13px 9px 22px 0 rgba(0, 0, 0, 0.3);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.28) 0%, rgba(196, 187, 240, 0.1) 100%);
   --radius: 31px;
   --radius-sm: 999px;
@@ -88,10 +88,10 @@
   --shadow-hover: -18px 16px 48px rgba(148, 152, 160, 0.14);
   --shadow-interactive-hover:
     4px 4px 18px 0 rgba(0, 0, 0, 0.06) inset,
-    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+    13px 12px 28px 0 rgba(0, 0, 0, 0.32);
   --shadow-static-hover:
     3px 3px 14px 0 rgba(0, 0, 0, 0.05) inset,
-    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+    13px 9px 22px 0 rgba(0, 0, 0, 0.28);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.1) 0%, rgba(196, 187, 240, 0.2) 100%);
   --toast-bg: #fff;
   --year-opacity: 1.0;
