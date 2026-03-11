@@ -226,15 +226,10 @@
   .strength-card,
   .interest-card,
   .contact-card,
-  .language-card,
   .timeline-card,
   .project-card {
     padding: 1rem;
     border-radius: 22px;
-  }
-
-  .language-card {
-    border-radius: 31px;
   }
 
   .search-input {
