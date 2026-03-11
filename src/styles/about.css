@@ -59,7 +59,18 @@
 }
 
 .what-icon {
-  color: var(--accent);
+  color: #C4BBF0;
+  display: inline-flex;
+}
+
+.light .what-icon {
+  color: #6254A5;
+}
+
+.what-icon svg {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 .what-title {

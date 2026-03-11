@@ -4,6 +4,10 @@ import { Brain, Eye, Database, Cloud, Award, Users, Zap, Waves, Gamepad2, Trophy
 import SectionTitle from '../components/SectionTitle';
 import Timeline from '../components/Timeline';
 import Badge from '../components/Badge';
+import whatIDoIcon1 from '../assets/icons/about/icon1.svg?raw';
+import whatIDoIcon2 from '../assets/icons/about/icon2.svg?raw';
+import whatIDoIcon3 from '../assets/icons/about/icon3.svg?raw';
+import whatIDoIcon4 from '../assets/icons/about/icon4.svg?raw';
 import { useLang } from '../context/LanguageContext';
 import { setSEO } from '../utils/seo';
 import { useMeasuredLines } from '../hooks/useMeasuredLines';
@@ -19,6 +23,7 @@ const iconComponents = {
 };
 
 const strengthIcons = [Zap, Award, Users];
+const whatIDoIcons = [whatIDoIcon1, whatIDoIcon2, whatIDoIcon3, whatIDoIcon4];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -60,7 +65,7 @@ export default function About() {
           <SectionTitle withLine>{t.sections.whatIDo}</SectionTitle>
           <div className="what-grid">
             {t.whatIDo.map((item, i) => {
-              const Icon = iconComponents[item.icon] || Brain;
+              const iconMarkup = whatIDoIcons[i] || whatIDoIcons[0];
               return (
                 <motion.div
                   key={i}
@@ -71,7 +76,11 @@ export default function About() {
                   variants={cardVariants}
                   className="what-card"
                 >
-                  <Icon size={28} className="what-icon" />
+                  <span
+                    className="what-icon"
+                    aria-hidden="true"
+                    dangerouslySetInnerHTML={{ __html: iconMarkup }}
+                  />
                   <h3 className="what-title">{item.title}</h3>
                   <p className="what-desc">{item.description}</p>
                 </motion.div>

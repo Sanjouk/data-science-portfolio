@@ -233,6 +233,10 @@
     border-radius: 22px;
   }
 
+  .language-card {
+    border-radius: 31px;
+  }
+
   .search-input {
     font-size: 0.85rem;
   }
