@@ -54,7 +54,7 @@
   left: 50%;
   width: calc(100% + (100vw - 100%) * var(--navbar-scroll-progress));
   border-radius: 0;
-  background: var(--bg-card);
+  background: var(--bg-card-glass);
   border: 1px solid var(--border-card);
   box-shadow: var(--shadow);
   opacity: calc(var(--navbar-scroll-progress) * 0.95);
@@ -65,8 +65,8 @@
 }
 
 .navbar--floating .navbar-menu-shell::before {
-  backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
-  -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
+  backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
+  -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
 }
 
 .navbar-logo-link {
@@ -212,7 +212,7 @@
     right: 0;
     width: auto;
     border-radius: 0;
-    background: var(--bg-card);
+    background: var(--bg-card-glass);
     border: 1px solid var(--border-card);
     box-shadow: var(--shadow);
     opacity: calc(var(--navbar-scroll-progress) * 0.95);
@@ -226,8 +226,8 @@
   }
 
   .navbar--floating .navbar-inner::before {
-    backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
-    -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
+    backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
+    -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
   }
 
   .navbar-logo-link {

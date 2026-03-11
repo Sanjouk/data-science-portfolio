@@ -4,8 +4,18 @@
 :root {
   /* Colors — Night theme */
   --bg: #121216;
-  --bg-card: rgba(196, 187, 240, 0.25);
-  --bg-card-hover: rgba(196, 187, 240, 0.35);
+  --glass-opacity: 0.1;
+  --glass-angle: -45deg;
+  --glass-intensity: 0.8;
+  --glass-blur: 18px;
+  --bg-card: rgba(196, 187, 240, var(--glass-opacity));
+  --bg-card-hover: rgba(196, 187, 240, 0.16);
+  --bg-card-glass: linear-gradient(
+    var(--glass-angle),
+    rgba(255, 255, 255, calc(var(--glass-intensity) * 0.28)) 0%,
+    rgba(255, 255, 255, calc(var(--glass-intensity) * 0.1)) 44%,
+    rgba(255, 255, 255, 0) 100%
+  ), var(--bg-card);
   --bg-nav: rgba(0, 0, 0, 0.85);
   --text: #e4e4e7;
   --text-muted: #9ca3af;
@@ -17,18 +27,15 @@
   --border-card: rgba(196, 187, 240, 0.15);
   --border-accent: rgba(196, 187, 240, 0.3);
   --border-nav: #C4BBF0;
-  --shadow: 
-    0 4px 4px 0 rgba(255, 255, 255, 0.25) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
+  --shadow:
+    3px 3px 14px 0 rgba(255, 255, 255, 0.08) inset,
     13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
   --shadow-hover: 0 15px 50px rgba(0, 0, 0, 0.7);
-  --shadow-interactive-hover: 
-    0 8px 8px 0 rgba(255, 255, 255, 0.45) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
-    13px 20px 30px 0 rgba(0, 0, 0, 0.4);
-  --shadow-static-hover: 
-    0 4px 4px 0 rgba(255, 255, 255, 0.4) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset, 
+  --shadow-interactive-hover:
+    4px 4px 18px 0 rgba(255, 255, 255, 0.09) inset,
+    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+  --shadow-static-hover:
+    3px 3px 14px 0 rgba(255, 255, 255, 0.08) inset,
     13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.28) 0%, rgba(196, 187, 240, 0.1) 100%);
   --radius: 31px;
@@ -56,8 +63,14 @@
 .light {
   /* Colors — Day theme */
   --bg: #FFFFFF;
-  --bg-card: #f9f9fb;
-  --bg-card-hover: #f0f1f5;
+  --bg-card: rgba(255, 255, 255, var(--glass-opacity));
+  --bg-card-hover: rgba(255, 255, 255, 0.16);
+  --bg-card-glass: linear-gradient(
+    var(--glass-angle),
+    rgba(255, 255, 255, calc(var(--glass-intensity) * 0.45)) 0%,
+    rgba(255, 255, 255, calc(var(--glass-intensity) * 0.14)) 44%,
+    rgba(255, 255, 255, 0) 100%
+  ), var(--bg-card);
   --bg-nav: rgba(255, 255, 255, 0.9);
   --text: #000000;
   --text-muted: #4b5563;
@@ -69,19 +82,16 @@
   --border-card: rgba(0, 0, 0, 0.04);
   --border-accent: rgba(98, 84, 165, 0.25);
   --border-nav: #000000;
-  --shadow: 
-    0 4px 4px 0 rgba(255, 255, 255, 0.45) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
-    13px 7px 18.2px 0 rgba(98, 84, 165, 0.12);
-  --shadow-hover: 0 20px 50px rgba(98, 84, 165, 0.18);
-  --shadow-interactive-hover: 
-    0 8px 8px 0 rgba(255, 255, 255, 0.6) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
-    13px 20px 30px 0 rgba(98, 84, 165, 0.22);
-  --shadow-static-hover: 
-    0 4px 4px 0 rgba(255, 255, 255, 0.6) inset, 
-    0 -4px 4px 0 rgba(0, 0, 0, 0.05) inset, 
-    13px 7px 18.2px 0 rgba(98, 84, 165, 0.15);
+  --shadow:
+    3px 3px 14px 0 rgba(0, 0, 0, 0.05) inset,
+    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+  --shadow-hover: -18px 16px 48px rgba(148, 152, 160, 0.14);
+  --shadow-interactive-hover:
+    4px 4px 18px 0 rgba(0, 0, 0, 0.06) inset,
+    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
+  --shadow-static-hover:
+    3px 3px 14px 0 rgba(0, 0, 0, 0.05) inset,
+    13px 7px 18.2px 0 rgba(0, 0, 0, 0.25);
   --gradient-hero: linear-gradient(135deg, rgba(98, 84, 165, 0.1) 0%, rgba(196, 187, 240, 0.2) 100%);
   --toast-bg: #fff;
   --year-opacity: 1.0;
