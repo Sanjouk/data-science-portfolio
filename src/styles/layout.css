@@ -76,3 +76,26 @@
 .section {
   margin-bottom: 4rem;
 }
+
+@media (min-width: 1921px) {
+  .page {
+    max-width: 1680px;
+    padding-left: clamp(3rem, 4vw, 5rem);
+    padding-right: clamp(3rem, 4vw, 5rem);
+  }
+
+  .page--hero {
+    padding: clamp(2.2rem, 3vh, 3rem) clamp(2rem, 3.5vw, 5rem) 0;
+  }
+}
+
+@media (min-width: 2560px) {
+  .page {
+    max-width: 1900px;
+  }
+
+  .page--hero {
+    padding-left: clamp(2.5rem, 4vw, 6rem);
+    padding-right: clamp(2.5rem, 4vw, 6rem);
+  }
+}

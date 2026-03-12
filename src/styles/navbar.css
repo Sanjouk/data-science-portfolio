@@ -4,6 +4,7 @@
 .navbar {
   --navbar-scroll-progress: 0;
   --navbar-stick-top: 28px;
+  --navbar-logo-offset: 16px;
   position: sticky;
   top: var(--navbar-stick-top);
   z-index: 100;
@@ -12,6 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1241px) {
+  .navbar {
+    width: calc(100% - 80px);
+  }
 }
 
 .navbar.navbar--short-page {
@@ -47,7 +54,7 @@
   left: 50%;
   width: calc(100% + (100vw - 100%) * var(--navbar-scroll-progress));
   border-radius: 0;
-  background: var(--bg-card);
+  background: var(--bg-card-glass);
   border: 1px solid var(--border-card);
   box-shadow: var(--shadow);
   opacity: calc(var(--navbar-scroll-progress) * 0.95);
@@ -58,13 +65,13 @@
 }
 
 .navbar--floating .navbar-menu-shell::before {
-  backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
-  -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * 8px));
+  backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
+  -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
 }
 
 .navbar-logo-link {
   position: absolute;
-  left: 0;
+  left: var(--navbar-logo-offset);
   top: -8px;
   display: inline-flex;
   align-items: center;
@@ -159,6 +166,7 @@
 @media (max-width: 1024px) {
   .navbar {
     --navbar-stick-top: 22px;
+    --navbar-logo-offset: 4px;
     width: calc(100% - 40px);
     margin-top: 22px;
   }
@@ -192,6 +200,34 @@
     gap: 10px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+    isolation: isolate;
+  }
+
+  .navbar-inner::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    width: auto;
+    border-radius: 0;
+    background: var(--bg-card-glass);
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow);
+    opacity: calc(var(--navbar-scroll-progress) * 0.95);
+    transform: none;
+    pointer-events: none;
+    z-index: 0;
+    transition:
+      opacity 260ms ease,
+      backdrop-filter 260ms ease,
+      -webkit-backdrop-filter 260ms ease;
+  }
+
+  .navbar--floating .navbar-inner::before {
+    backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
+    -webkit-backdrop-filter: blur(calc(var(--navbar-scroll-progress) * var(--glass-blur)));
   }
 
   .navbar-logo-link {
@@ -199,6 +235,7 @@
     width: 47px;
     height: 38px;
     z-index: 131;
+    transform: none;
   }
 
   .navbar-logo {
@@ -218,6 +255,7 @@
     margin-left: auto;
     gap: 8px;
     z-index: 131;
+    transform: none;
   }
 
   .navbar-action-group {
@@ -253,6 +291,7 @@
     background: color-mix(in srgb, var(--bg-card) 88%, transparent);
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    transform: none;
   }
 
   .navbar-mobile-toggle:active {

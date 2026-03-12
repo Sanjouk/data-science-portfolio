@@ -11,7 +11,7 @@ const routes = [
   { path: '/about', key: 'about' },
   { path: '/projects', key: 'projects' },
   { path: '/resume', key: 'resume' },
-  // { path: '/contact', key: 'contact' },
+  { path: '/contact', key: 'contact' },
 ];
 
 export default function Navbar() {

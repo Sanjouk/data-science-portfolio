@@ -1,17 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, Linkedin, Github, Send, Briefcase } from 'lucide-react';
-import SectionTitle from '../components/SectionTitle';
-import Button from '../components/Button';
+import { Instagram, Mail, Linkedin, Github, Send } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { setSEO } from '../utils/seo';
-
-const contactIcons = {
-  phone: Phone,
-  email: Mail,
-  linkedin: Linkedin,
-  github: Github,
-};
 
 export default function Contact() {
   const { t } = useLang();
@@ -34,108 +25,99 @@ export default function Contact() {
     setTimeout(() => setToast(''), 4000);
   };
 
-  const contacts = [
-    { key: 'phone', value: t.contacts.phone, href: `tel:${t.contacts.phone}` },
-    { key: 'email', value: t.contacts.email, href: `mailto:${t.contacts.email}` },
-    { key: 'linkedin', value: 'LinkedIn', href: t.contacts.linkedin },
-    { key: 'github', value: 'GitHub', href: t.contacts.github },
+  const socials = [
+    { key: 'instagram', Icon: Instagram, href: t.contacts.instagram || '#', label: 'Instagram' },
+    { key: 'email', Icon: Mail, href: `mailto:${t.contacts.email}`, label: 'Email' },
+    { key: 'github', Icon: Github, href: t.contacts.github, label: 'GitHub' },
+    { key: 'linkedin', Icon: Linkedin, href: t.contacts.linkedin, label: 'LinkedIn' },
   ];
 
   return (
-    <div className="page">
-      {/* Contact Cards */}
-      <section className="section">
-        <SectionTitle>{t.sections.contact}</SectionTitle>
-        <div className="contacts-grid">
-          {contacts.map((c, i) => {
-            const Icon = contactIcons[c.key];
-            return (
-              <motion.a
-                key={c.key}
-                href={c.href}
-                target={c.key === 'linkedin' || c.key === 'github' ? '_blank' : undefined}
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                whileHover={{ y: -4 }}
-                className="contact-card"
-              >
-                <Icon size={22} className="contact-icon" />
-                <span className="contact-value">{c.value}</span>
-              </motion.a>
-            );
-          })}
-        </div>
-      </section>
+    <div className="page contact-page">
+      <section className="contact-layout">
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45 }}
+          className="contact-figma-left"
+        >
+          <h1 className="contact-figma-title">{t.sections.contact}</h1>
+          <p className="contact-figma-lead">{t.sections.openToText}</p>
 
-      {/* Contact Form */}
-      <section className="section">
-        <div className="contact-form-wrap">
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
+          <div className="contact-figma-socials">
+            {socials.map(({ key, Icon, href, label }) => {
+              const isExternal = href.startsWith('http');
+              return (
+                <a
+                  key={key}
+                  href={href}
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                  aria-label={label}
+                  className="contact-figma-social"
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45, delay: 0.08 }}
+          className="contact-figma-card"
+        >
+          <form className="contact-figma-form" onSubmit={handleSubmit}>
+            <div className="contact-figma-field">
               <label htmlFor="name">{t.contactForm.name}</label>
               <input
                 id="name"
                 type="text"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="form-input"
+                className="contact-figma-input"
               />
             </div>
-            <div className="form-group">
+
+            <div className="contact-figma-field">
               <label htmlFor="email">{t.contactForm.email}</label>
               <input
                 id="email"
                 type="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="form-input"
+                className="contact-figma-input"
               />
             </div>
-            <div className="form-group">
+
+            <div className="contact-figma-field">
               <label htmlFor="message">{t.contactForm.message}</label>
               <textarea
                 id="message"
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="form-input"
+                className="contact-figma-input contact-figma-textarea"
               />
             </div>
-            <Button type="submit" variant="primary">
-              <Send size={16} /> {t.contactForm.send}
-            </Button>
+
+            <button type="submit" className="contact-figma-submit">
+              <span>{t.contactForm.send}</span>
+              <Send size={14} />
+            </button>
           </form>
 
           {toast && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
               className={`toast ${toast === t.contactForm.error ? 'toast--error' : 'toast--success'}`}
             >
               {toast}
             </motion.div>
           )}
-        </div>
-      </section>
-
-      {/* Open to opportunities */}
-      <section className="section">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="opportunity-banner"
-        >
-          <Briefcase size={28} className="opportunity-icon" />
-          <div>
-            <h3 className="opportunity-title">{t.sections.openTo}</h3>
-            <p className="opportunity-text">{t.sections.openToText}</p>
-          </div>
         </motion.div>
       </section>
     </div>

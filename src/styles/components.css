@@ -120,11 +120,16 @@
 .contact-card,
 .language-card {
   border-radius: var(--radius);
-  background: var(--bg-card);
+  background: var(--bg-card-glass);
   border: 1px solid var(--border-card);
   padding: 1.5rem;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  transition:
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease,
+    border-color 0.28s ease;
   display: flex;
   flex-direction: column;
 }
@@ -154,9 +159,12 @@
   align-items: center;
   gap: 1.25rem;
   padding: 1.5rem;
-  background: var(--accent-glow);
-  border: 1px solid var(--border-accent);
+  background: var(--bg-card-glass);
+  border: 1px solid var(--border-card);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .opportunity-icon {
@@ -252,9 +260,20 @@
   padding: 1.5rem;
 }
 
+.light .modal-overlay {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.light .modal-content {
+  border-color: rgba(130, 136, 146, 0.22);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.55) inset,
+    var(--shadow);
+}
+
 .modal-content {
   position: relative;
-  background: var(--bg-card);
+  background: var(--bg-card-glass);
   border: 1px solid var(--border-card);
   border-radius: var(--radius);
   padding: 2rem;
@@ -262,7 +281,9 @@
   width: 100%;
   max-height: 85vh;
   overflow-y: auto;
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .modal-close {

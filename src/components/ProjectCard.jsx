@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Badge from './Badge';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 
 export default function ProjectCard({ project, onOpen, index = 0 }) {
@@ -39,16 +39,6 @@ export default function ProjectCard({ project, onOpen, index = 0 }) {
           onClick={(e) => e.stopPropagation()}
         >
           <Github size={16} /> GitHub
-        </a>
-        <a
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-card-link"
-          aria-label="Live"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <ExternalLink size={16} /> Live
         </a>
       </div>
     </motion.div>

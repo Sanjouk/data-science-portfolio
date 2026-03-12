@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import { useLang } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
 import { setSEO } from '../utils/seo';
+import { useMeasuredLines } from '../hooks/useMeasuredLines';
 
 const dayImg = '/images/main_photo_day.png';
 const nightImg = '/images/main_photo_night.png';
@@ -30,6 +31,7 @@ const iconMap = {
 export default function Home() {
   const { t } = useLang();
   const { theme } = useTheme();
+  useMeasuredLines([t]);
 
   useEffect(() => {
     setSEO(t.nav.home, t.profile.summary);
@@ -133,7 +135,7 @@ export default function Home() {
       <div className="page">
 
         <section className="section">
-          <SectionTitle>{t.featuredTitle}</SectionTitle>
+          <SectionTitle withLine>{t.featuredTitle}</SectionTitle>
           <div className="projects-grid">
             {featured.map((p, i) => (
               <ProjectCard key={p.slug} project={p} index={i} />

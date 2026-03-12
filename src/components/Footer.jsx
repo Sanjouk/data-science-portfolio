@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 
 export default function Footer() {
@@ -18,9 +18,8 @@ export default function Footer() {
             <Mail size={18} />
           </a>
         </div>
-        <p className="footer-copy">
-          {t.footer.rights} <Heart size={12} className="inline-heart" />
-        </p>
+        <div className="footer-divider" aria-hidden="true" />
+        <p className="footer-copy">{t.footer.rights}</p>
       </div>
     </footer>
   );

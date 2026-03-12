@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Github, ExternalLink, CheckCircle } from 'lucide-react';
+import { X, Github, CheckCircle } from 'lucide-react';
 import Badge from './Badge';
 import { useLang } from '../context/LanguageContext';
 
@@ -61,14 +61,6 @@ export default function ProjectModal({ project, onClose }) {
                 className="modal-action-btn modal-action-btn--github"
               >
                 <Github size={16} /> GitHub
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="modal-action-btn modal-action-btn--live"
-              >
-                <ExternalLink size={16} /> Live
               </a>
             </div>
           </motion.div>
