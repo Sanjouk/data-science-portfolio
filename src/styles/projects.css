@@ -22,9 +22,14 @@
 }
 
 .projects-grid {
+  --project-card-min: 360px;
+  --project-grid-gap: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(var(--project-card-min), 1fr));
+  gap: var(--project-grid-gap);
+  width: 100%;
+  max-width: calc(4 * var(--project-card-min) + 3 * var(--project-grid-gap));
+  margin: 0 auto;
 }
 
 .project-card {
