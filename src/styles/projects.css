@@ -196,7 +196,7 @@
 
 @media (min-width: 1921px) {
   .projects-grid {
-    --project-tile-size: clamp(320px, 17.5vw, 360px);
+    --project-tile-size: clamp(330px, 18vw, 390px);
     --project-tile-gap: clamp(2rem, 3.6vw, 6rem);
     grid-template-columns: repeat(auto-fit, minmax(var(--project-tile-size), var(--project-tile-size)));
     justify-content: center;
@@ -207,26 +207,26 @@
   }
 
   .project-card {
-    aspect-ratio: 1 / 1;
-    min-height: 0;
-    padding: clamp(1rem, 0.9vw, 1.35rem);
+    min-height: clamp(390px, 22vw, 500px);
+    height: 100%;
+    padding: clamp(1.05rem, 0.95vw, 1.45rem);
     border-radius: clamp(26px, 1.6vw, 34px);
   }
 
   .project-card-header {
-    min-height: clamp(66px, 4.2vw, 86px);
-    margin-bottom: clamp(0.6rem, 0.8vw, 1rem);
+    min-height: clamp(70px, 4.5vw, 90px);
+    margin-bottom: clamp(0.75rem, 0.9vw, 1.1rem);
   }
 
   .project-card-title {
-    font-size: clamp(1.2rem, 0.9vw, 1.5rem);
-    line-height: 1.16;
+    font-size: clamp(1.28rem, 0.98vw, 1.65rem);
+    line-height: 1.18;
   }
 
   .project-card-desc {
-    font-size: clamp(0.84rem, 0.54vw, 0.92rem);
-    margin-bottom: clamp(0.7rem, 0.75vw, 1rem);
-    line-height: 1.4;
+    font-size: clamp(0.88rem, 0.58vw, 0.98rem);
+    margin-bottom: clamp(0.75rem, 0.82vw, 1.05rem);
+    line-height: 1.44;
   }
 
   .project-card-tech {
