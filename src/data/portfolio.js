@@ -348,7 +348,9 @@ export const portfolio = {
             email: 'Email',
             message: 'Message',
             send: 'Envoyer',
-            success: 'Message envoyé avec succès ! (simulation)',
+            sending: 'Envoi...',
+            success: 'Message envoyé avec succès !',
+            submitError: "Échec de l'envoi. Veuillez réessayer.",
             error: 'Veuillez remplir tous les champs.',
         },
         footer: {
@@ -711,7 +713,9 @@ export const portfolio = {
             email: 'Email',
             message: 'Message',
             send: 'Send',
-            success: 'Message sent successfully! (simulation)',
+            sending: 'Sending...',
+            success: 'Message sent successfully!',
+            submitError: 'Message could not be sent. Please try again.',
             error: 'Please fill in all fields.',
         },
         footer: {
@@ -1078,7 +1082,9 @@ export const portfolio = {
             email: 'Email',
             message: 'Сообщение',
             send: 'Отправить',
-            success: 'Сообщение успешно отправлено! (симуляция)',
+            sending: 'Отправка...',
+            success: 'Сообщение успешно отправлено!',
+            submitError: 'Не удалось отправить сообщение. Попробуйте ещё раз.',
             error: 'Пожалуйста, заполните все поля.',
         },
         footer: {
@@ -1445,7 +1451,9 @@ export const portfolio = {
             email: 'Email',
             message: 'Повідомлення',
             send: 'Надіслати',
-            success: 'Повідомлення успішно надіслано! (симуляція)',
+            sending: 'Надсилання...',
+            success: 'Повідомлення успішно надіслано!',
+            submitError: 'Не вдалося надіслати повідомлення. Спробуйте ще раз.',
             error: 'Будь ласка, заповніть усі поля.',
         },
         footer: {
