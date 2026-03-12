@@ -794,7 +794,7 @@ export const portfolio = {
             contact: 'Контакты',
             openTo: 'Открыт к возможностям',
             openToText:
-                'Ищу 2-летнюю стажировку с сентября 2026 года в направлениях Data Science / AI & ML / Data Engineering. Буду рад вашему сообщению!',
+                'Ищу 2-летнюю стажировку с сентября 2026 года в направлениях Data Science / AI & ML / Data Engineering. Буду рад Вашему сообщению!',
         },
         whatIDo: [
             {
@@ -1163,7 +1163,7 @@ export const portfolio = {
             contact: 'Контакти',
             openTo: 'Відкритий до можливостей',
             openToText:
-                'Шукаю 2-річне стажування з вересня 2026 року в напрямах Data Science / AI & ML / Data Engineering. Буду радий вашому повідомленню!',
+                'Шукаю 2-річне стажування з вересня 2026 року в напрямах Data Science / AI & ML / Data Engineering. Буду радий Вашому повідомленню!',
         },
         whatIDo: [
             {

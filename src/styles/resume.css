@@ -44,6 +44,24 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+.resume-pdf-fallback {
+  width: min(100%, 860px);
+  height: min(78vh, 980px);
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.resume-fallback-text {
+  padding: 1rem;
+  color: var(--text);
+}
+
+.resume-fallback-text a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .resume-actions {
   display: flex;
   justify-content: center;
