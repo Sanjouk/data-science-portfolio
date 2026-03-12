@@ -89,24 +89,54 @@ export const portfolio = {
         ],
         skills: [
             {
-                category: 'ML / DL',
-                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+                category: 'Python',
+                items: ['Python', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'FastAPI', 'Flask', 'OpenCV', 'YOLO', 'MediaPipe'],
             },
             {
-                category: 'Python & Data',
-                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+                category: 'Machine Learning',
+                items: [
+                    'Modélisation supervisée',
+                    'Modélisation non supervisée',
+                    'Random Forest',
+                    'Gradient Boosting',
+                    'SVM',
+                    'Validation croisée',
+                ],
             },
             {
-                category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow (notions)', 'Spark (notions)', 'Data pipelines'],
+                category: 'Deep Learning & LLM',
+                items: ['Réseaux de neurones', 'TensorFlow', 'PyTorch', 'Keras', 'RAG', 'Ollama', 'OpenAI'],
             },
             {
-                category: 'Déploiement',
-                items: ['Docker', 'Git', 'GitHub Actions', 'API REST', 'AWS (notions)', 'Azure (notions)'],
+                category: 'Bases de données (SGBD & NoSQL)',
+                items: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'ChromaDB'],
+            },
+            {
+                category: 'Cloud & DevOps',
+                items: ['Docker', 'Kubernetes (notions)', 'Terraform (notions)', 'AWS (notions)', 'Azure (notions)'],
+            },
+            {
+                category: 'Programmation',
+                items: ['Java', 'JavaScript', 'SQL', 'HTML/CSS', 'REST API', 'ETL', 'Data pipelines'],
             },
             {
                 category: 'Outils',
-                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+                items: [
+                    'GitHub',
+                    'Postman',
+                    'VS Code',
+                    'Linux',
+                    'Jira',
+                    'Power BI',
+                    'Excel',
+                    'PowerPoint',
+                    'Word',
+                    'Notion',
+                ],
+            },
+            {
+                category: 'Analyse de données',
+                items: ['EDA', 'Prétraitement des données', 'Feature engineering', 'Évaluation des performances'],
             },
         ],
         languages: [
@@ -253,8 +283,8 @@ export const portfolio = {
                 slug: 'banking-system-web-simulator',
                 title: 'Application web simulant un système bancaire',
                 description:
-                    'Application PHP/SQL reproduisant les fonctionnalités essentielles d’un espace bancaire avec authentification sécurisée et gestion complète des comptes.',
-                tech: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
+                    'Application web reproduisant les fonctionnalités essentielles d’un espace bancaire avec authentification sécurisée et gestion complète des comptes. Utilise des bases de données SQL.',
+                tech: ['SQL', 'JavaScript', 'HTML', 'CSS'],
                 features: [
                     'Authentification sécurisée avec sessions, rôles et contrôle d’accès',
                     'Validation des données côté client et côté serveur',
@@ -285,15 +315,16 @@ export const portfolio = {
         ],
         experience: [
             {
-                title: 'Stagiaire',
+                title: 'Stage ouvrier',
                 company: 'Chronodrive',
-                period: 'Stage',
+                period: 'Stage ouvrier',
                 location: 'France',
-                description: "Stage en entreprise dans le domaine de la distribution. Découverte de l'environnement professionnel et des processus logistiques.",
+                description:
+                    "Stage ouvrier chez Chronodrive dans le secteur de la distribution : immersion terrain, préparation de commandes et découverte des processus logistiques.",
             },
             {
                 title: 'Agent immobilier',
-                company: 'Indépendant',
+                company: 'Cabinet juridique “Vsesvit”',
                 period: 'Expérience professionnelle',
                 location: 'France',
                 description: "Gestion de la relation client, négociation, et accompagnement dans les transactions immobilières.",
@@ -420,24 +451,54 @@ export const portfolio = {
         ],
         skills: [
             {
-                category: 'ML / DL',
-                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+                category: 'Python',
+                items: ['Python', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'FastAPI', 'Flask', 'OpenCV', 'YOLO', 'MediaPipe'],
             },
             {
-                category: 'Python & Data',
-                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+                category: 'Machine Learning',
+                items: [
+                    'Supervised Learning',
+                    'Unsupervised Learning',
+                    'Random Forest',
+                    'Gradient Boosting',
+                    'SVM',
+                    'Cross-Validation',
+                ],
             },
             {
-                category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow (basics)', 'Spark (basics)', 'Data pipelines'],
+                category: 'Deep Learning & LLM',
+                items: ['Neural Networks', 'TensorFlow', 'PyTorch', 'Keras', 'RAG', 'Ollama', 'OpenAI'],
             },
             {
-                category: 'Deployment',
-                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (basics)', 'Azure (basics)'],
+                category: 'Databases (RDBMS & NoSQL)',
+                items: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'ChromaDB'],
+            },
+            {
+                category: 'Cloud & DevOps',
+                items: ['Docker', 'Kubernetes (basics)', 'Terraform (basics)', 'AWS (basics)', 'Azure (basics)'],
+            },
+            {
+                category: 'Programming',
+                items: ['Java', 'JavaScript', 'SQL', 'HTML/CSS', 'REST API', 'ETL', 'Data pipelines'],
             },
             {
                 category: 'Tools',
-                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+                items: [
+                    'GitHub',
+                    'Postman',
+                    'VS Code',
+                    'Linux',
+                    'Jira',
+                    'Power BI',
+                    'Excel',
+                    'PowerPoint',
+                    'Word',
+                    'Notion',
+                ],
+            },
+            {
+                category: 'Data Analysis',
+                items: ['EDA', 'Data Preprocessing', 'Feature Engineering', 'Performance Evaluation'],
             },
         ],
         languages: [
@@ -584,8 +645,8 @@ export const portfolio = {
                 slug: 'banking-system-web-simulator',
                 title: 'Banking System Web Simulator',
                 description:
-                    'PHP/SQL web application simulating core online banking workflows with secure authentication and complete account management.',
-                tech: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
+                    'Web application simulating core online banking workflows with secure authentication and complete account management. Uses SQL databases.',
+                tech: ['SQL', 'JavaScript', 'HTML', 'CSS'],
                 features: [
                     'Secure authentication with sessions, roles and access control',
                     'Client-side and server-side data validation',
@@ -616,15 +677,16 @@ export const portfolio = {
         ],
         experience: [
             {
-                title: 'Intern',
+                title: 'Shop-floor Internship',
                 company: 'Chronodrive',
-                period: 'Internship',
+                period: 'Shop-floor Internship',
                 location: 'France',
-                description: 'Internship in the distribution sector. Discovery of the professional environment and logistics processes.',
+                description:
+                    'Shop-floor internship at Chronodrive in retail distribution: hands-on exposure to order preparation and logistics workflows.',
             },
             {
                 title: 'Real Estate Agent',
-                company: 'Independent',
+                company: 'Vsesvit Law Firm',
                 period: 'Work Experience',
                 location: 'France',
                 description: 'Client relationship management, negotiation, and support in real estate transactions.',
@@ -751,24 +813,54 @@ export const portfolio = {
         ],
         skills: [
             {
-                category: 'ML / DL',
-                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+                category: 'Python',
+                items: ['Python', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'FastAPI', 'Flask', 'OpenCV', 'YOLO', 'MediaPipe'],
             },
             {
-                category: 'Python и Data',
-                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+                category: 'Машинное обучение',
+                items: [
+                    'Обучение с учителем',
+                    'Обучение без учителя',
+                    'Random Forest',
+                    'Gradient Boosting',
+                    'SVM',
+                    'Кросс-валидация',
+                ],
             },
             {
-                category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow (базовые знания)', 'Spark (базовые знания)', 'Data pipelines'],
+                category: 'Глубокое обучение и LLM',
+                items: ['Нейронные сети', 'TensorFlow', 'PyTorch', 'Keras', 'RAG', 'Ollama', 'OpenAI'],
             },
             {
-                category: 'Развёртывание',
-                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (базовые знания)', 'Azure (базовые знания)'],
+                category: 'Базы данных (СУБД и NoSQL)',
+                items: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'ChromaDB'],
+            },
+            {
+                category: 'Облако и DevOps',
+                items: ['Docker', 'Kubernetes (базовые знания)', 'Terraform (базовые знания)', 'AWS (базовые знания)', 'Azure (базовые знания)'],
+            },
+            {
+                category: 'Программирование',
+                items: ['Java', 'JavaScript', 'SQL', 'HTML/CSS', 'REST API', 'ETL', 'Data pipelines'],
             },
             {
                 category: 'Инструменты',
-                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+                items: [
+                    'GitHub',
+                    'Postman',
+                    'VS Code',
+                    'Linux',
+                    'Jira',
+                    'Power BI',
+                    'Excel',
+                    'PowerPoint',
+                    'Word',
+                    'Notion',
+                ],
+            },
+            {
+                category: 'Анализ данных',
+                items: ['EDA', 'Предобработка данных', 'Инженерия признаков', 'Оценка качества моделей'],
             },
         ],
         languages: [
@@ -915,8 +1007,8 @@ export const portfolio = {
                 slug: 'banking-system-web-simulator',
                 title: 'Веб-симулятор банковской системы',
                 description:
-                    'Веб-приложение на PHP/SQL, имитирующее базовые банковские процессы: безопасную авторизацию, управление счетами и операции.',
-                tech: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
+                    'Веб-приложение, имитирующее базовые банковские процессы: безопасную авторизацию, управление счетами и операции. Использует базы данных SQL.',
+                tech: ['SQL', 'JavaScript', 'HTML', 'CSS'],
                 features: [
                     'Безопасная аутентификация с сессиями, ролями и контролем доступа',
                     'Валидация данных на клиентской и серверной стороне',
@@ -949,16 +1041,16 @@ export const portfolio = {
         ],
         experience: [
             {
-                title: 'Стажёр',
+                title: 'Рабочая стажировка',
                 company: 'Chronodrive',
-                period: 'Стажировка',
+                period: 'Рабочая стажировка',
                 location: 'Франция',
                 description:
-                    'Стажировка в сфере дистрибуции. Знакомство с профессиональной средой и логистическими процессами.',
+                    'Рабочая стажировка в Chronodrive в сфере дистрибуции: практическое погружение в подготовку заказов и логистические процессы.',
             },
             {
                 title: 'Агент по недвижимости',
-                company: 'Независимый',
+                company: 'Юридическая фирма «Vsesvit»',
                 period: 'Опыт работы',
                 location: 'Франция',
                 description:
@@ -1087,24 +1179,54 @@ export const portfolio = {
         ],
         skills: [
             {
-                category: 'ML / DL',
-                items: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'SHAP'],
+                category: 'Python',
+                items: ['Python', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'FastAPI', 'Flask', 'OpenCV', 'YOLO', 'MediaPipe'],
             },
             {
-                category: 'Python та Data',
-                items: ['Python', 'Jupyter', 'FastAPI', 'SQLite', 'PostgreSQL', 'ChromaDB'],
+                category: 'Машинне навчання',
+                items: [
+                    'Навчання з учителем',
+                    'Навчання без учителя',
+                    'Random Forest',
+                    'Gradient Boosting',
+                    'SVM',
+                    'Крос-валідація',
+                ],
             },
             {
-                category: 'Data Engineering',
-                items: ['ETL', 'SQL', 'Airflow (базові знання)', 'Spark (базові знання)', 'Data pipelines'],
+                category: 'Глибоке навчання та LLM',
+                items: ['Нейронні мережі', 'TensorFlow', 'PyTorch', 'Keras', 'RAG', 'Ollama', 'OpenAI'],
             },
             {
-                category: 'Розгортання',
-                items: ['Docker', 'Git', 'GitHub Actions', 'REST API', 'AWS (базові знання)', 'Azure (базові знання)'],
+                category: 'Бази даних (СУБД та NoSQL)',
+                items: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'ChromaDB'],
+            },
+            {
+                category: 'Хмара та DevOps',
+                items: ['Docker', 'Kubernetes (базові знання)', 'Terraform (базові знання)', 'AWS (базові знання)', 'Azure (базові знання)'],
+            },
+            {
+                category: 'Програмування',
+                items: ['Java', 'JavaScript', 'SQL', 'HTML/CSS', 'REST API', 'ETL', 'Data pipelines'],
             },
             {
                 category: 'Інструменти',
-                items: ['VS Code', 'Linux', 'Obsidian', 'Notion', 'Postman', 'MLflow'],
+                items: [
+                    'GitHub',
+                    'Postman',
+                    'VS Code',
+                    'Linux',
+                    'Jira',
+                    'Power BI',
+                    'Excel',
+                    'PowerPoint',
+                    'Word',
+                    'Notion',
+                ],
+            },
+            {
+                category: 'Аналіз даних',
+                items: ['EDA', 'Передобробка даних', 'Інженерія ознак', 'Оцінка якості моделей'],
             },
         ],
         languages: [
@@ -1251,8 +1373,8 @@ export const portfolio = {
                 slug: 'banking-system-web-simulator',
                 title: 'Веб-симулятор банківської системи',
                 description:
-                    'Веб-застосунок на PHP/SQL, що моделює базові банківські процеси: безпечну автентифікацію, керування рахунками та операції.',
-                tech: ['PHP', 'SQL', 'JavaScript', 'HTML', 'CSS'],
+                    'Веб-застосунок, що моделює базові банківські процеси: безпечну автентифікацію, керування рахунками та операції. Використовує бази даних SQL.',
+                tech: ['SQL', 'JavaScript', 'HTML', 'CSS'],
                 features: [
                     'Безпечна автентифікація із сесіями, ролями та контролем доступу',
                     'Валідація даних на клієнтському та серверному боці',
@@ -1285,16 +1407,16 @@ export const portfolio = {
         ],
         experience: [
             {
-                title: 'Стажер',
+                title: 'Робітнича практика',
                 company: 'Chronodrive',
-                period: 'Стажування',
+                period: 'Робітнича практика',
                 location: 'Франція',
                 description:
-                    'Стажування у сфері дистрибуції. Ознайомлення з професійним середовищем і логістичними процесами.',
+                    'Робітнича практика в Chronodrive у сфері дистрибуції: практичне занурення в підготовку замовлень і логістичні процеси.',
             },
             {
                 title: 'Агент з нерухомості',
-                company: 'Незалежний',
+                company: 'Юридична фірма «Vsesvit»',
                 period: 'Досвід роботи',
                 location: 'Франція',
                 description:

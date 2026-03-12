@@ -162,6 +162,21 @@
   margin-top: 0.8rem;
 }
 
+.dark .contact-figma-title {
+  color: #fff;
+}
+
+.dark .contact-figma-social {
+  background: #fff;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+}
+
+.dark .contact-figma-social:hover {
+  filter: brightness(0.98);
+}
+
 .light .contact-figma-card {
   background: rgba(255, 255, 255, 0.72);
   border-color: rgba(196, 187, 240, 0.22);
