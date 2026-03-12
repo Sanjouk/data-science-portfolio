@@ -279,9 +279,14 @@
     max-width: 100%;
   }
 
-  .hero::after,
+  .hero::after {
+    bottom: clamp(72px, 11vw, 95px);
+    font-size: clamp(0.64rem, 1.7vw, 0.74rem);
+  }
+
   .hero::before {
-    display: none;
+    bottom: clamp(10px, 3.5vw, 20px);
+    height: clamp(48px, 9vw, 64px);
   }
 }
 
@@ -343,9 +348,14 @@
     border-radius: 0;
   }
 
-  .hero::after,
+  .hero::after {
+    bottom: clamp(68px, 10vw, 90px);
+    font-size: clamp(0.64rem, 1.35vw, 0.72rem);
+  }
+
   .hero::before {
-    display: none;
+    bottom: clamp(8px, 2.6vw, 16px);
+    height: clamp(46px, 7vw, 60px);
   }
 }
 
@@ -433,6 +443,17 @@
   .hero-blur::after {
     opacity: 0.82;
   }
+
+  .hero::after {
+    bottom: 44px;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero::before {
+    bottom: 6px;
+    height: 34px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -482,6 +503,16 @@
     width: clamp(220px, 78vw, 330px);
     height: clamp(370px, 72vh, 520px);
     opacity: 0.4;
+  }
+
+  .hero::after {
+    bottom: 36px;
+    font-size: 0.56rem;
+  }
+
+  .hero::before {
+    bottom: 4px;
+    height: 28px;
   }
 }
 

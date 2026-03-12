@@ -9,10 +9,11 @@ export const portfolio = {
             availability: 'Alternance 2 ans dès septembre 2026',
         },
         contacts: {
-            phone: '+33 7 XX XX XX XX',
-            email: 'vlasov.oleksandr@example.com',
-            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
-            github: 'https://github.com/oleksandr-vlasov',
+            phone: '+33 7 67 34 23 88',
+            email: 'sashanext18@gmail.com',
+            instagram: 'https://www.instagram.com/sanjous1k/',
+            linkedin: 'https://www.linkedin.com/in/vlasov-utt/',
+            github: 'https://github.com/Sanjouk',
         },
         nav: {
             home: 'Accueil',
@@ -174,7 +175,7 @@ export const portfolio = {
                     'Conteneurisation Docker complète',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Local-LLM-assistant',
                 live: '#',
             },
             {
@@ -191,7 +192,7 @@ export const portfolio = {
                     'Pipeline Docker automatisé',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/job-tracker',
                 live: '#',
             },
             {
@@ -208,7 +209,7 @@ export const portfolio = {
                     'Visualisations interprétables (SHAP)',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/IA01-Project',
                 live: '#',
             },
             {
@@ -225,7 +226,7 @@ export const portfolio = {
                     'Monitoring temps réel avec gestion des pertes de connexion',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Connected-WeatherStation',
                 live: '#',
             },
             {
@@ -242,7 +243,7 @@ export const portfolio = {
                     'Alertes visuelles et sonores en cas de baisse du niveau de vigilance',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/driver-vigilance-detection-system',
                 live: '#',
             },
             {
@@ -259,7 +260,7 @@ export const portfolio = {
                     'Code modulaire avec classes réutilisables et tests unitaires de base',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Jest',
                 live: '#',
             },
             {
@@ -276,7 +277,7 @@ export const portfolio = {
                     'Journalisation des actions pour le suivi et le débogage',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/telegram_bot',
                 live: '#',
             },
             {
@@ -293,7 +294,7 @@ export const portfolio = {
                     'Interface utilisateur claire pour la simulation des parcours bancaires',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/project',
                 live: '#',
             },
         ],
@@ -326,14 +327,14 @@ export const portfolio = {
                 title: 'Agent immobilier',
                 company: 'Cabinet juridique “Vsesvit”',
                 period: 'Expérience professionnelle',
-                location: 'France',
+                location: 'Ukraine',
                 description: "Gestion de la relation client, négociation, et accompagnement dans les transactions immobilières.",
             },
             {
                 title: 'Volontaire — Compétitions de natation',
                 company: 'Bénévolat',
                 period: 'Volontariat',
-                location: 'France',
+                location: 'Ukraine',
                 description: "Organisation et assistance lors de compétitions de natation. Coordination d'équipe et gestion d'événements.",
             },
         ],
@@ -371,10 +372,11 @@ export const portfolio = {
             availability: '2-year apprenticeship from September 2026',
         },
         contacts: {
-            phone: '+33 7 XX XX XX XX',
-            email: 'vlasov.oleksandr@example.com',
-            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
-            github: 'https://github.com/oleksandr-vlasov',
+            phone: '+33 7 67 34 23 88',
+            email: 'sashanext18@gmail.com',
+            instagram: 'https://www.instagram.com/sanjous1k/',
+            linkedin: 'https://www.linkedin.com/in/vlasov-utt/',
+            github: 'https://github.com/Sanjouk',
         },
         nav: {
             home: 'Home',
@@ -536,7 +538,7 @@ export const portfolio = {
                     'Full Docker containerization',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Local-LLM-assistant',
                 live: '#',
             },
             {
@@ -553,7 +555,7 @@ export const portfolio = {
                     'Automated Docker pipeline',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/job-tracker',
                 live: '#',
             },
             {
@@ -570,7 +572,7 @@ export const portfolio = {
                     'Interpretable visualizations (SHAP)',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/IA01-Project',
                 live: '#',
             },
             {
@@ -587,7 +589,7 @@ export const portfolio = {
                     'Real-time monitoring with connection-loss handling',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Connected-WeatherStation',
                 live: '#',
             },
             {
@@ -604,7 +606,7 @@ export const portfolio = {
                     'Visual and audio alerts when vigilance decreases',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/driver-vigilance-detection-system',
                 live: '#',
             },
             {
@@ -621,7 +623,7 @@ export const portfolio = {
                     'Modular codebase with reusable classes and baseline unit tests',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Jest',
                 live: '#',
             },
             {
@@ -638,7 +640,7 @@ export const portfolio = {
                     'Action logging for monitoring and easier debugging',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/telegram_bot',
                 live: '#',
             },
             {
@@ -655,7 +657,7 @@ export const portfolio = {
                     'Clean user interface to simulate realistic banking journeys',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/project',
                 live: '#',
             },
         ],
@@ -688,14 +690,14 @@ export const portfolio = {
                 title: 'Real Estate Agent',
                 company: 'Vsesvit Law Firm',
                 period: 'Work Experience',
-                location: 'France',
+                location: 'Ukraine',
                 description: 'Client relationship management, negotiation, and support in real estate transactions.',
             },
             {
                 title: 'Volunteer — Swimming Competitions',
                 company: 'Volunteering',
                 period: 'Volunteer Work',
-                location: 'France',
+                location: 'Ukraine',
                 description: 'Organization and assistance at swimming competitions. Team coordination and event management.',
             },
         ],
@@ -733,10 +735,11 @@ export const portfolio = {
             availability: '2-летняя стажировка с сентября 2026',
         },
         contacts: {
-            phone: '+33 7 XX XX XX XX',
-            email: 'vlasov.oleksandr@example.com',
-            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
-            github: 'https://github.com/oleksandr-vlasov',
+            phone: '+33 7 67 34 23 88',
+            email: 'sashanext18@gmail.com',
+            instagram: 'https://www.instagram.com/sanjous1k/',
+            linkedin: 'https://www.linkedin.com/in/vlasov-utt/',
+            github: 'https://github.com/Sanjouk',
         },
         nav: {
             home: 'Главная',
@@ -898,7 +901,7 @@ export const portfolio = {
                     'Полная контейнеризация в Docker',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Local-LLM-assistant',
                 live: '#',
             },
             {
@@ -915,7 +918,7 @@ export const portfolio = {
                     'Автоматизированный Docker-пайплайн',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/job-tracker',
                 live: '#',
             },
             {
@@ -932,7 +935,7 @@ export const portfolio = {
                     'Интерпретируемые визуализации (SHAP)',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/IA01-Project',
                 live: '#',
             },
             {
@@ -949,7 +952,7 @@ export const portfolio = {
                     'Мониторинг в реальном времени с обработкой потерь соединения',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Connected-WeatherStation',
                 live: '#',
             },
             {
@@ -966,7 +969,7 @@ export const portfolio = {
                     'Визуальные и звуковые предупреждения при снижении концентрации',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/driver-vigilance-detection-system',
                 live: '#',
             },
             {
@@ -983,7 +986,7 @@ export const portfolio = {
                     'Модульная кодовая база с переиспользуемыми компонентами',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Jest',
                 live: '#',
             },
             {
@@ -1000,7 +1003,7 @@ export const portfolio = {
                     'Логирование действий для мониторинга и отладки',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/telegram_bot',
                 live: '#',
             },
             {
@@ -1017,7 +1020,7 @@ export const portfolio = {
                     'Понятный интерфейс для симуляции банковских пользовательских сценариев',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/project',
                 live: '#',
             },
         ],
@@ -1052,7 +1055,7 @@ export const portfolio = {
                 title: 'Агент по недвижимости',
                 company: 'Юридическая фирма «Vsesvit»',
                 period: 'Опыт работы',
-                location: 'Франция',
+                location: 'Украина',
                 description:
                     'Управление отношениями с клиентами, переговоры и сопровождение сделок с недвижимостью.',
             },
@@ -1060,7 +1063,7 @@ export const portfolio = {
                 title: 'Волонтёр — соревнования по плаванию',
                 company: 'Волонтёрство',
                 period: 'Волонтёрская деятельность',
-                location: 'Франция',
+                location: 'Украина',
                 description:
                     'Организация и помощь на соревнованиях по плаванию. Координация команды и управление событиями.',
             },
@@ -1099,10 +1102,11 @@ export const portfolio = {
             availability: '2-річне стажування з вересня 2026',
         },
         contacts: {
-            phone: '+33 7 XX XX XX XX',
-            email: 'vlasov.oleksandr@example.com',
-            linkedin: 'https://linkedin.com/in/oleksandr-vlasov',
-            github: 'https://github.com/oleksandr-vlasov',
+            phone: '+33 7 67 34 23 88',
+            email: 'sashanext18@gmail.com',
+            instagram: 'https://www.instagram.com/sanjous1k/',
+            linkedin: 'https://www.linkedin.com/in/vlasov-utt/',
+            github: 'https://github.com/Sanjouk',
         },
         nav: {
             home: 'Головна',
@@ -1264,7 +1268,7 @@ export const portfolio = {
                     'Повна контейнеризація в Docker',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Local-LLM-assistant',
                 live: '#',
             },
             {
@@ -1281,7 +1285,7 @@ export const portfolio = {
                     'Автоматизований Docker-пайплайн',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/job-tracker',
                 live: '#',
             },
             {
@@ -1298,7 +1302,7 @@ export const portfolio = {
                     'Інтерпретовані візуалізації (SHAP)',
                 ],
                 featured: true,
-                github: '#',
+                github: 'https://github.com/Sanjouk/IA01-Project',
                 live: '#',
             },
             {
@@ -1315,7 +1319,7 @@ export const portfolio = {
                     'Моніторинг у реальному часі з обробкою втрат з’єднання',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Connected-WeatherStation',
                 live: '#',
             },
             {
@@ -1332,7 +1336,7 @@ export const portfolio = {
                     'Візуальні та звукові попередження при падінні рівня пильності',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/driver-vigilance-detection-system',
                 live: '#',
             },
             {
@@ -1349,7 +1353,7 @@ export const portfolio = {
                     'Модульна кодова база з перевикористовуваними компонентами',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/Jest',
                 live: '#',
             },
             {
@@ -1366,7 +1370,7 @@ export const portfolio = {
                     'Логування дій для моніторингу та відлагодження',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/telegram_bot',
                 live: '#',
             },
             {
@@ -1383,7 +1387,7 @@ export const portfolio = {
                     'Зрозумілий інтерфейс для моделювання банківських користувацьких сценаріїв',
                 ],
                 featured: false,
-                github: '#',
+                github: 'https://github.com/Sanjouk/project',
                 live: '#',
             },
         ],
@@ -1418,7 +1422,7 @@ export const portfolio = {
                 title: 'Агент з нерухомості',
                 company: 'Юридична фірма «Vsesvit»',
                 period: 'Досвід роботи',
-                location: 'Франція',
+                location: 'Україна',
                 description:
                     'Управління відносинами з клієнтами, переговори та супровід угод з нерухомістю.',
             },
@@ -1426,7 +1430,7 @@ export const portfolio = {
                 title: 'Волонтер — змагання з плавання',
                 company: 'Волонтерство',
                 period: 'Волонтерська діяльність',
-                location: 'Франція',
+                location: 'Україна',
                 description:
                     'Організація та допомога під час змагань з плавання. Координація команди та управління подіями.',
             },
