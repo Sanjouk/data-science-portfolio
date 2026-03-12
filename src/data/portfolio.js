@@ -730,7 +730,7 @@ export const portfolio = {
             name: 'ВЛАСОВ Александр',
             title: 'Студент-инженер ИИ и Data Science',
             summary:
-                'Студент-инженер, увлечённый ИИ и Data Science. Ищу 2-летнюю стажировку с сентября 2026 года в сферах: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
+                'Я студент инженерного направления в области ИИ и Data Science. Ищу двухлетнюю стажировку с сентября 2026 года в сферах Data Science, Data Analysis, Big Data, AI & ML, Data Engineering и IoT.',
             location: 'Труа, Франция',
             availability: '2-летняя стажировка с сентября 2026',
         },
@@ -778,7 +778,7 @@ export const portfolio = {
         sections: {
             aboutMe: 'Обо мне',
             aboutMeText:
-                'Студент инженерной школы UTT (University of Technology of Troyes) по направлению Digital Systems, специализация — ИИ и Data Science. Увлечён машинным обучением, глубоким обучением и инженерией данных, создаю практические проекты на стыке исследований и внедрения. Сейчас ищу 2-летнюю стажировку, чтобы развивать навыки в индустрии.',
+                'Я учусь в инженерной школе UTT (University of Technology of Troyes) по направлению Digital Systems и специализируюсь на ИИ и Data Science. Больше всего меня интересуют Machine Learning, Deep Learning и Data Engineering. Сейчас ищу двухлетнюю стажировку, чтобы развивать навыки в индустрии.',
             whatIDo: 'Чем я занимаюсь',
             skills: 'Навыки',
             languages: 'Языки',
@@ -1097,7 +1097,7 @@ export const portfolio = {
             name: 'ВЛАСОВ Олександр',
             title: 'Студент-інженер ШІ та Data Science',
             summary:
-                'Студент-інженер, захоплений ШІ та Data Science. Шукаю 2-річне стажування з вересня 2026 року у сферах: Data Science, Data Analysis, Big Data, AI & ML, Data Engineering, IoT dev.',
+                'Я студент-інженер у сфері ШІ та Data Science. Шукаю дворічне стажування з вересня 2026 року в напрямах Data Science, Data Analysis, Big Data, AI & ML, Data Engineering та IoT.',
             location: 'Труа, Франція',
             availability: '2-річне стажування з вересня 2026',
         },
@@ -1145,7 +1145,7 @@ export const portfolio = {
         sections: {
             aboutMe: 'Про мене',
             aboutMeText:
-                'Студент інженерної школи UTT (University of Technology of Troyes) за напрямом Digital Systems, спеціалізація — ШІ та Data Science. Захоплююся машинним навчанням, deep learning та інженерією даних, створюю практичні проєкти на стику досліджень і впровадження. Наразі шукаю 2-річне стажування, щоб розвивати навички в індустрії.',
+                'Навчаюся в інженерній школі UTT (University of Technology of Troyes) за напрямом Digital Systems і спеціалізуюся на ШІ та Data Science. Найбільше мене цікавлять Machine Learning, Deep Learning та Data Engineering. Наразі шукаю 2-річне стажування, щоб розвивати навички в індустрії.',
             whatIDo: 'Що я роблю',
             skills: 'Навички',
             languages: 'Мови',
