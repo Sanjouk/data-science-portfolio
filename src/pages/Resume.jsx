@@ -9,7 +9,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
-const cvFile = '/cv/Oleksandr_VLASOV_CV_Data_Science.pdf';
+const cvFile = '/cv/oleksandr_vlasov_cv_data_science.pdf';
 
 // Configure PDFJS Worker for Vite
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
